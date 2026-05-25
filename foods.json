@@ -1,0 +1,5633 @@
+{
+  "meta": {
+    "version": "1.1.0",
+    "updated": "2026-05-25",
+    "source": "HK Centre for Food Safety, ACOG, AAP, WHO, NHS, FDA, USDA, CDC"
+  },
+  "pregnancy": [
+    {
+      "name": "三文魚（已煮熟）",
+      "en": "Cooked Salmon",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "補DHA",
+        "蛋白質"
+      ],
+      "why": "Omega-3 (DHA) 對胎兒腦部發育非常重要。",
+      "note": "徹底煮熟。每星期 2-3 次，每次約 100g。",
+      "sources": "HK CFS、ACOG"
+    },
+    {
+      "name": "沙甸魚",
+      "en": "Sardines",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "補DHA",
+        "補鈣",
+        "低汞"
+      ],
+      "why": "低汞 Omega-3 來源，連骨食補鈣。",
+      "note": "罐頭沙甸魚 OK，揀低鈉版本。",
+      "sources": "FDA"
+    },
+    {
+      "name": "鯖魚（大西洋）",
+      "en": "Atlantic Mackerel",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "補DHA"
+      ],
+      "why": "低汞，富 Omega-3。",
+      "note": "⚠️ 唔好同王鯖魚（高汞）搞亂。",
+      "sources": "FDA"
+    },
+    {
+      "name": "蝦（已煮熟）",
+      "en": "Cooked Shrimp",
+      "icon": "🦐",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "低汞"
+      ],
+      "why": "低汞低脂優質蛋白。",
+      "note": "完全煮熟（變紅、不透明）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "龍蝦（已煮熟）",
+      "en": "Cooked Lobster",
+      "icon": "🦞",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "低汞優質蛋白。",
+      "note": "完全煮熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "蟹（已煮熟）",
+      "en": "Cooked Crab",
+      "icon": "🦀",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "低汞"
+      ],
+      "why": "低汞蛋白質來源。",
+      "note": "完全煮熟，避免大閘蟹生醃。",
+      "sources": "FDA"
+    },
+    {
+      "name": "鱈魚",
+      "en": "Cod",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞白肉魚。",
+      "note": "完全煮熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "羅非魚",
+      "en": "Tilapia",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞溫和魚。",
+      "note": "完全煮熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "比目魚",
+      "en": "Flounder",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞白肉。",
+      "note": "完全煮熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "吞拿魚（罐頭 light）",
+      "en": "Light Canned Tuna",
+      "icon": "🐟",
+      "status": "caution",
+      "tags": [
+        "水銀"
+      ],
+      "why": "中等水銀，限量食得。",
+      "note": "每星期最多 2 罐（140g）。揀 light tuna 唔好揀 albacore。",
+      "sources": "FDA、HK CFS"
+    },
+    {
+      "name": "長鰭吞拿魚（白吞拿）",
+      "en": "Albacore Tuna",
+      "icon": "🐟",
+      "status": "caution",
+      "tags": [
+        "高水銀"
+      ],
+      "why": "水銀比 light tuna 高 3 倍。",
+      "note": "每星期最多 1 份（170g）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "吞拿魚扒（新鮮）",
+      "en": "Fresh Tuna Steak",
+      "icon": "🐟",
+      "status": "caution",
+      "tags": [
+        "高水銀"
+      ],
+      "why": "水銀比罐頭高。",
+      "note": "每月 1-2 次，每次 170g 以內。",
+      "sources": "FDA"
+    },
+    {
+      "name": "煙三文魚",
+      "en": "Smoked Salmon",
+      "icon": "🐟",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "未煮熟，李斯特菌風險。",
+      "note": "加熱至冒煙（74°C）食用。",
+      "sources": "NHS"
+    },
+    {
+      "name": "魷魚／墨魚",
+      "en": "Squid/Cuttlefish",
+      "icon": "🦑",
+      "status": "caution",
+      "tags": [
+        "徹底煮熟"
+      ],
+      "why": "低汞，但要完全煮熟。",
+      "note": "避免半生熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "鯊魚",
+      "en": "Shark",
+      "icon": "🦈",
+      "status": "avoid",
+      "tags": [
+        "極高汞"
+      ],
+      "why": "水銀含量極高。",
+      "note": "完全避免。",
+      "sources": "FDA、HK CFS"
+    },
+    {
+      "name": "劍魚",
+      "en": "Swordfish",
+      "icon": "🗡",
+      "status": "avoid",
+      "tags": [
+        "極高汞"
+      ],
+      "why": "水銀含量極高。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "王鯖魚",
+      "en": "King Mackerel",
+      "icon": "🐟",
+      "status": "avoid",
+      "tags": [
+        "極高汞"
+      ],
+      "why": "水銀含量極高。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "馬頭魚",
+      "en": "Tilefish",
+      "icon": "🐟",
+      "status": "avoid",
+      "tags": [
+        "極高汞"
+      ],
+      "why": "水銀含量極高。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "大眼吞拿魚",
+      "en": "Bigeye Tuna",
+      "icon": "🐟",
+      "status": "avoid",
+      "tags": [
+        "極高汞"
+      ],
+      "why": "高汞，刺身常用。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "橙鯛魚",
+      "en": "Orange Roughy",
+      "icon": "🐟",
+      "status": "avoid",
+      "tags": [
+        "高汞"
+      ],
+      "why": "水銀含量高。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "生魚片／刺身",
+      "en": "Sashimi",
+      "icon": "🍣",
+      "status": "avoid",
+      "tags": [
+        "寄生蟲",
+        "細菌"
+      ],
+      "why": "李斯特菌、寄生蟲風險。",
+      "note": "避免所有種類嘅刺身。",
+      "sources": "ACOG、HK CFS"
+    },
+    {
+      "name": "生壽司",
+      "en": "Raw Sushi",
+      "icon": "🍣",
+      "status": "avoid",
+      "tags": [
+        "寄生蟲"
+      ],
+      "why": "生魚有李斯特菌、寄生蟲。",
+      "note": "煮熟壽司（鰻魚、蝦）OK。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "生蠔",
+      "en": "Raw Oysters",
+      "icon": "🦪",
+      "status": "avoid",
+      "tags": [
+        "細菌",
+        "病毒"
+      ],
+      "why": "極高食物中毒風險。",
+      "note": "完全避免，煮熟（蠔粥）可以。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "生青口",
+      "en": "Raw Mussels",
+      "icon": "🦪",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "未煮熟有風險。",
+      "note": "煮到完全打開先食。",
+      "sources": "FDA"
+    },
+    {
+      "name": "生蜆／青口",
+      "en": "Raw Clams",
+      "icon": "🦪",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "未煮熟風險高。",
+      "note": "煮熟先食。",
+      "sources": "FDA"
+    },
+    {
+      "name": "海膽",
+      "en": "Sea Urchin",
+      "icon": "🟣",
+      "status": "avoid",
+      "tags": [
+        "生食"
+      ],
+      "why": "生食有寄生蟲風險。",
+      "note": "完全避免。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "生螺／田雞",
+      "en": "Snails/Frogs",
+      "icon": "🐌",
+      "status": "avoid",
+      "tags": [
+        "寄生蟲"
+      ],
+      "why": "廣州管圓線蟲風險。",
+      "note": "完全避免。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "鰻魚（醃製／未熟）",
+      "en": "Raw/Cured Eel",
+      "icon": "🐟",
+      "status": "avoid",
+      "tags": [
+        "未煮熟"
+      ],
+      "why": "含血清毒素，需高溫破壞。",
+      "note": "日式蒲燒鰻（完全熟）OK。",
+      "sources": "FDA"
+    },
+    {
+      "name": "牛肉（全熟）",
+      "en": "Well-Done Beef",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "蛋白質"
+      ],
+      "why": "血紅素鐵預防孕婦貧血。",
+      "note": "完全熟（內部 71°C+）。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "雞肉（全熟）",
+      "en": "Cooked Chicken",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "低脂優質蛋白。",
+      "note": "內部 74°C+。",
+      "sources": "NHS"
+    },
+    {
+      "name": "火雞",
+      "en": "Turkey",
+      "icon": "🦃",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "低脂"
+      ],
+      "why": "高蛋白低脂。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豬肉（全熟）",
+      "en": "Cooked Pork",
+      "icon": "🐷",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "B群"
+      ],
+      "why": "優質蛋白同 B 雜。",
+      "note": "內部 71°C+。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鴨肉（全熟）",
+      "en": "Cooked Duck",
+      "icon": "🦆",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "補鐵"
+      ],
+      "why": "鐵質豐富。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "羊肉（全熟）",
+      "en": "Lamb",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "B12"
+      ],
+      "why": "鐵 + B12 雙重補益。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "動物肝臟",
+      "en": "Liver",
+      "icon": "🥩",
+      "status": "caution",
+      "tags": [
+        "維他命A",
+        "補鐵"
+      ],
+      "why": "鐵質爆燈，但維他命 A 過量可致畸胎。",
+      "note": "每星期最多一次，每次 60-75g。",
+      "sources": "NHS"
+    },
+    {
+      "name": "火腿／午餐肉",
+      "en": "Ham/Lunch Meat",
+      "icon": "🥓",
+      "status": "caution",
+      "tags": [
+        "李斯特菌",
+        "高鈉"
+      ],
+      "why": "李斯特菌風險 + 高鈉。",
+      "note": "加熱至冒煙（74°C）先食。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "煙肉",
+      "en": "Bacon",
+      "icon": "🥓",
+      "status": "caution",
+      "tags": [
+        "李斯特菌",
+        "高鈉"
+      ],
+      "why": "加工肉，硝酸鹽含量高。",
+      "note": "煎到全熟，少食。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "香腸／腸仔",
+      "en": "Sausages",
+      "icon": "🌭",
+      "status": "caution",
+      "tags": [
+        "李斯特菌",
+        "加工肉"
+      ],
+      "why": "加工肉品質參差。",
+      "note": "完全煮熟，揀低鈉版本。",
+      "sources": "NHS"
+    },
+    {
+      "name": "風乾火腿（Prosciutto）",
+      "en": "Prosciutto",
+      "icon": "🥓",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "未煮熟風乾。",
+      "note": "加熱食用，少食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "沙拉米",
+      "en": "Salami",
+      "icon": "🍖",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "風乾肉類。",
+      "note": "加熱食用。",
+      "sources": "NHS"
+    },
+    {
+      "name": "半生熟牛扒",
+      "en": "Medium Rare Steak",
+      "icon": "🥩",
+      "status": "avoid",
+      "tags": [
+        "弓形蟲",
+        "細菌"
+      ],
+      "why": "弓形蟲、大腸桿菌風險。",
+      "note": "完全避免，要 well-done。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "牛肉刺身／生牛肉",
+      "en": "Raw Beef",
+      "icon": "🥩",
+      "status": "avoid",
+      "tags": [
+        "寄生蟲"
+      ],
+      "why": "弓形蟲、寄生蟲風險。",
+      "note": "完全避免。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "生肉沙律（牛肉他他）",
+      "en": "Steak Tartare",
+      "icon": "🥩",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "生肉。",
+      "note": "完全避免。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "半生雞蛋／流心蛋",
+      "en": "Runny Eggs",
+      "icon": "🍳",
+      "status": "avoid",
+      "tags": [
+        "沙門氏菌"
+      ],
+      "why": "沙門氏菌風險。",
+      "note": "完全避免：太陽蛋、流心、月光蛋、半生熟。",
+      "sources": "NHS"
+    },
+    {
+      "name": "雞蛋（全熟）",
+      "en": "Fully Cooked Eggs",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "膽鹼"
+      ],
+      "why": "優質蛋白，膽鹼助腦發育。",
+      "note": "完全煮熟，蛋黃蛋白無流心。",
+      "sources": "NHS"
+    },
+    {
+      "name": "鵪鶉蛋（全熟）",
+      "en": "Quail Eggs",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "營養濃縮。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鴨蛋（全熟）",
+      "en": "Duck Eggs",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "高蛋白。",
+      "note": "完全煮熟，避免皮蛋（生）。",
+      "sources": "USDA"
+    },
+    {
+      "name": "皮蛋",
+      "en": "Century Egg",
+      "icon": "🥚",
+      "status": "avoid",
+      "tags": [
+        "鉛",
+        "沙門氏菌"
+      ],
+      "why": "製作過程可能殘留鉛，未經消毒。",
+      "note": "完全避免。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "鹹蛋（煮熟）",
+      "en": "Salted Egg",
+      "icon": "🥚",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "鈉含量極高。",
+      "note": "少食，每星期最多 1 隻。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "巴士德消毒奶",
+      "en": "Pasteurized Milk",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "補鈣",
+        "蛋白質"
+      ],
+      "why": "鈣同蛋白質來源。",
+      "note": "揀全脂或低脂，避免生奶。",
+      "sources": "NHS"
+    },
+    {
+      "name": "硬芝士（巴士德）",
+      "en": "Hard Cheese (Pasteurized)",
+      "icon": "🧀",
+      "status": "safe",
+      "tags": [
+        "補鈣"
+      ],
+      "why": "鈣豐富。",
+      "note": "Cheddar、Parmesan、Gouda 等硬芝士 OK。",
+      "sources": "NHS"
+    },
+    {
+      "name": "忌廉芝士",
+      "en": "Cream Cheese",
+      "icon": "🧀",
+      "status": "safe",
+      "tags": [
+        "脂肪"
+      ],
+      "why": "巴士德處理過，OK。",
+      "note": "確認包裝寫 pasteurized。",
+      "sources": "NHS"
+    },
+    {
+      "name": "希臘乳酪",
+      "en": "Greek Yogurt",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "益生菌",
+        "補鈣"
+      ],
+      "why": "高蛋白高鈣益生菌。",
+      "note": "揀無糖原味，全脂亦可。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "原味乳酪",
+      "en": "Plain Yogurt",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "益生菌",
+        "補鈣"
+      ],
+      "why": "益生菌助腸道。",
+      "note": "揀無糖。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "未消毒奶／生奶",
+      "en": "Raw Milk",
+      "icon": "🥛",
+      "status": "avoid",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "李斯特菌、彎曲桿菌風險。",
+      "note": "完全避免，包括農場生奶。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "軟芝士（未消毒）",
+      "en": "Soft Cheese (Unpasteurized)",
+      "icon": "🧀",
+      "status": "avoid",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "李斯特菌高風險。",
+      "note": "避免：Brie、Camembert、Feta、藍芝士（除非包裝寫 pasteurized）。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "墨西哥白芝士",
+      "en": "Queso Fresco",
+      "icon": "🧀",
+      "status": "avoid",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "傳統未消毒。",
+      "note": "除非標明 pasteurized。",
+      "sources": "FDA"
+    },
+    {
+      "name": "牛油果",
+      "en": "Avocado",
+      "icon": "🥑",
+      "status": "safe",
+      "tags": [
+        "好脂肪",
+        "葉酸",
+        "鉀"
+      ],
+      "why": "單元不飽和脂肪 + 葉酸。",
+      "note": "洗皮先切。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "藍莓",
+      "en": "Blueberries",
+      "icon": "🫐",
+      "status": "safe",
+      "tags": [
+        "抗氧化",
+        "維他命C"
+      ],
+      "why": "抗氧化物豐富。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "草莓",
+      "en": "Strawberries",
+      "icon": "🍓",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "葉酸"
+      ],
+      "why": "維他命C + 葉酸。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "奇異果",
+      "en": "Kiwi",
+      "icon": "🥝",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "葉酸"
+      ],
+      "why": "維他命 C 比橙更高。",
+      "note": "洗皮先切。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蘋果",
+      "en": "Apple",
+      "icon": "🍎",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "纖維、維他命 C。",
+      "note": "洗淨連皮食最好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "梨",
+      "en": "Pear",
+      "icon": "🍐",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "潤腸"
+      ],
+      "why": "幫助便秘。",
+      "note": "洗淨食皮。",
+      "sources": "USDA"
+    },
+    {
+      "name": "香蕉",
+      "en": "Banana",
+      "icon": "🍌",
+      "status": "safe",
+      "tags": [
+        "鉀",
+        "止孕吐",
+        "B6"
+      ],
+      "why": "B6 紓緩孕吐。",
+      "note": "孕吐期間好幫手。",
+      "sources": "NHS"
+    },
+    {
+      "name": "橙",
+      "en": "Orange",
+      "icon": "🍊",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "葉酸"
+      ],
+      "why": "維他命 C 助鐵吸收。",
+      "note": "飯後食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "檸檬",
+      "en": "Lemon",
+      "icon": "🍋",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "止孕吐"
+      ],
+      "why": "檸檬味助止孕吐。",
+      "note": "檸檬水冰水飲。",
+      "sources": "NHS"
+    },
+    {
+      "name": "提子",
+      "en": "Grapes",
+      "icon": "🍇",
+      "status": "safe",
+      "tags": [
+        "抗氧化"
+      ],
+      "why": "白藜蘆醇抗氧化。",
+      "note": "徹底洗淨，去皮更好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "西瓜",
+      "en": "Watermelon",
+      "icon": "🍉",
+      "status": "safe",
+      "tags": [
+        "水份",
+        "止孕吐"
+      ],
+      "why": "消水腫，孕吐時舒適。",
+      "note": "洗外皮先切。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蜜瓜／哈密瓜",
+      "en": "Cantaloupe",
+      "icon": "🍈",
+      "status": "caution",
+      "tags": [
+        "李斯特菌外皮"
+      ],
+      "why": "外皮可能有李斯特菌。",
+      "note": "切之前徹底洗皮、刷外皮。",
+      "sources": "FDA"
+    },
+    {
+      "name": "芒果",
+      "en": "Mango",
+      "icon": "🥭",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "C"
+      ],
+      "why": "β-胡蘿蔔素豐富。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "菠蘿",
+      "en": "Pineapple",
+      "icon": "🍍",
+      "status": "caution",
+      "tags": [
+        "菠蘿蛋白酶"
+      ],
+      "why": "少量 OK，大量傳統認為刺激子宮收縮（科學證據有限）。",
+      "note": "少量食 OK，連食幾個唔好。",
+      "sources": "NHS"
+    },
+    {
+      "name": "全熟木瓜",
+      "en": "Ripe Papaya",
+      "icon": "🥭",
+      "status": "caution",
+      "tags": [
+        "要全熟"
+      ],
+      "why": "全熟黃木瓜 OK，未熟綠木瓜避免。",
+      "note": "揀全黃熟透嘅。",
+      "sources": "NHS、中醫"
+    },
+    {
+      "name": "青木瓜",
+      "en": "Green Papaya",
+      "icon": "🥭",
+      "status": "avoid",
+      "tags": [
+        "催生"
+      ],
+      "why": "含木瓜蛋白酶，傳統認為催生。",
+      "note": "避免泰式青木瓜沙律。",
+      "sources": "中醫文獻"
+    },
+    {
+      "name": "龍眼／荔枝",
+      "en": "Longan/Lychee",
+      "icon": "🍒",
+      "status": "caution",
+      "tags": [
+        "燥熱"
+      ],
+      "why": "中醫認為偏燥熱，多食易上火。",
+      "note": "每日 5-10 粒，孕後期少食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "山竹",
+      "en": "Mangosteen",
+      "icon": "🍇",
+      "status": "safe",
+      "tags": [
+        "維他命C"
+      ],
+      "why": "溫和水果。",
+      "note": "適量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "水蜜桃",
+      "en": "Peach",
+      "icon": "🍑",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "纖維"
+      ],
+      "why": "溫和水果。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "車厘子",
+      "en": "Cherries",
+      "icon": "🍒",
+      "status": "safe",
+      "tags": [
+        "抗氧化"
+      ],
+      "why": "抗氧化、抗炎。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "無花果",
+      "en": "Figs",
+      "icon": "🟪",
+      "status": "safe",
+      "tags": [
+        "鈣",
+        "纖維"
+      ],
+      "why": "高鈣高纖。",
+      "note": "新鮮或乾貨均可。",
+      "sources": "USDA"
+    },
+    {
+      "name": "菠菜",
+      "en": "Spinach",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "補葉酸",
+        "補鐵"
+      ],
+      "why": "葉酸極高。",
+      "note": "煮熟食，避免生食。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "西蘭花",
+      "en": "Broccoli",
+      "icon": "🥦",
+      "status": "safe",
+      "tags": [
+        "補葉酸",
+        "維他命C"
+      ],
+      "why": "葉酸 + 鈣 + 纖維。",
+      "note": "蒸或灼好過。",
+      "sources": "NHS"
+    },
+    {
+      "name": "芥蘭",
+      "en": "Chinese Broccoli",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "補鈣",
+        "葉酸"
+      ],
+      "why": "鈣 + 葉酸。",
+      "note": "快灼。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白菜",
+      "en": "Bok Choy",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "補鈣",
+        "維他命C"
+      ],
+      "why": "鈣 + C。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "菜心",
+      "en": "Choy Sum",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "葉酸"
+      ],
+      "why": "溫和易消化。",
+      "note": "汆水或灼。",
+      "sources": "USDA"
+    },
+    {
+      "name": "莧菜",
+      "en": "Amaranth",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "鈣"
+      ],
+      "why": "鐵 + 鈣。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "通菜",
+      "en": "Water Spinach",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "鐵",
+        "纖維"
+      ],
+      "why": "鐵質豐富。",
+      "note": "快炒或灼。",
+      "sources": "USDA"
+    },
+    {
+      "name": "紅蘿蔔",
+      "en": "Carrot",
+      "icon": "🥕",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "纖維"
+      ],
+      "why": "β-胡蘿蔔素。",
+      "note": "煮熟或生食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "番茄",
+      "en": "Tomato",
+      "icon": "🍅",
+      "status": "safe",
+      "tags": [
+        "茄紅素",
+        "維他命C"
+      ],
+      "why": "抗氧化。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "南瓜",
+      "en": "Pumpkin",
+      "icon": "🎃",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "纖維"
+      ],
+      "why": "β-胡蘿蔔素。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "番薯",
+      "en": "Sweet Potato",
+      "icon": "🍠",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "纖維"
+      ],
+      "why": "β-胡蘿蔔素豐富。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "薯仔",
+      "en": "Potato",
+      "icon": "🥔",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "鉀"
+      ],
+      "why": "健康碳水。",
+      "note": "避免發芽嘅薯仔（含茄鹼）。",
+      "sources": "NHS"
+    },
+    {
+      "name": "芋頭",
+      "en": "Taro",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "纖維"
+      ],
+      "why": "複合碳水。",
+      "note": "完全煮熟（生有刺激皮膚）。",
+      "sources": "USDA"
+    },
+    {
+      "name": "粟米",
+      "en": "Corn",
+      "icon": "🌽",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "葉黃素"
+      ],
+      "why": "纖維豐富。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "冬瓜",
+      "en": "Winter Melon",
+      "icon": "🟢",
+      "status": "safe",
+      "tags": [
+        "消水腫"
+      ],
+      "why": "利尿消水腫。",
+      "note": "煲湯、炒。",
+      "sources": "中醫"
+    },
+    {
+      "name": "合掌瓜",
+      "en": "Chayote",
+      "icon": "🟢",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "溫和易消化。",
+      "note": "煮湯。",
+      "sources": "USDA"
+    },
+    {
+      "name": "絲瓜",
+      "en": "Loofah",
+      "icon": "🟢",
+      "status": "safe",
+      "tags": [
+        "維他命C"
+      ],
+      "why": "清熱。",
+      "note": "快炒。",
+      "sources": "中醫"
+    },
+    {
+      "name": "翠玉瓜／節瓜",
+      "en": "Zucchini",
+      "icon": "🥒",
+      "status": "safe",
+      "tags": [
+        "低卡",
+        "纖維"
+      ],
+      "why": "低卡水分多。",
+      "note": "任何煮法。",
+      "sources": "USDA"
+    },
+    {
+      "name": "青瓜",
+      "en": "Cucumber",
+      "icon": "🥒",
+      "status": "safe",
+      "tags": [
+        "水份"
+      ],
+      "why": "水分多消暑。",
+      "note": "洗淨食皮。",
+      "sources": "USDA"
+    },
+    {
+      "name": "椰菜",
+      "en": "Cabbage",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "纖維"
+      ],
+      "why": "葉酸 + 纖維。",
+      "note": "煮熟或泡菜（韓式 OK）。",
+      "sources": "USDA"
+    },
+    {
+      "name": "椰菜花",
+      "en": "Cauliflower",
+      "icon": "🥦",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "葉酸"
+      ],
+      "why": "低碳水替代品。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "羽衣甘藍",
+      "en": "Kale",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "超級食物",
+        "補鐵",
+        "葉酸"
+      ],
+      "why": "營養超高。",
+      "note": "煮熟食最好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芝麻菜",
+      "en": "Arugula",
+      "icon": "🥬",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "生食李斯特菌風險。",
+      "note": "自己屋企徹底洗，外面餐廳避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "生芽菜",
+      "en": "Raw Sprouts",
+      "icon": "🌱",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "沙律芽容易藏沙門氏菌。",
+      "note": "徹底煮熟先食。",
+      "sources": "FDA"
+    },
+    {
+      "name": "未煮紅腰豆",
+      "en": "Raw Kidney Beans",
+      "icon": "🫘",
+      "status": "avoid",
+      "tags": [
+        "毒素"
+      ],
+      "why": "含植物血凝素，有毒。",
+      "note": "一定要徹底煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白米",
+      "en": "White Rice",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "易消化碳水。",
+      "note": "主食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "糙米",
+      "en": "Brown Rice",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "B群"
+      ],
+      "why": "比白米多 B 雜 + 纖維。",
+      "note": "代替白米。",
+      "sources": "USDA"
+    },
+    {
+      "name": "藜麥",
+      "en": "Quinoa",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "完整蛋白質",
+        "纖維"
+      ],
+      "why": "完整氨基酸譜。",
+      "note": "洗淨先煮。",
+      "sources": "USDA"
+    },
+    {
+      "name": "燕麥",
+      "en": "Oats",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "B群"
+      ],
+      "why": "高纖維。",
+      "note": "無糖原味。",
+      "sources": "NHS"
+    },
+    {
+      "name": "全麥麵包",
+      "en": "Whole Wheat Bread",
+      "icon": "🍞",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "比白麵包多纖維。",
+      "note": "揀全穀物。",
+      "sources": "NHS"
+    },
+    {
+      "name": "意粉／通粉",
+      "en": "Pasta",
+      "icon": "🍝",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "主食選擇。",
+      "note": "全麥版本更好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "小米",
+      "en": "Millet",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "溫和"
+      ],
+      "why": "易消化。",
+      "note": "煲粥好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蕎麥",
+      "en": "Buckwheat",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "B群"
+      ],
+      "why": "低 GI。",
+      "note": "日式蕎麥麵 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "麵粉（生）",
+      "en": "Raw Flour",
+      "icon": "🌾",
+      "status": "avoid",
+      "tags": [
+        "大腸桿菌"
+      ],
+      "why": "生麵粉可能含大腸桿菌。",
+      "note": "避免生 cookie dough、未煮蛋糕糊。",
+      "sources": "FDA"
+    },
+    {
+      "name": "豆腐",
+      "en": "Tofu",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "植物蛋白",
+        "補鈣"
+      ],
+      "why": "植物蛋白 + 鈣。",
+      "note": "揀新鮮或盒裝消毒。",
+      "sources": "HK 衞生署"
+    },
+    {
+      "name": "豆漿（消毒）",
+      "en": "Soy Milk",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "植物蛋白"
+      ],
+      "why": "植物奶替代。",
+      "note": "揀無糖。",
+      "sources": "USDA"
+    },
+    {
+      "name": "毛豆",
+      "en": "Edamame",
+      "icon": "🫛",
+      "status": "safe",
+      "tags": [
+        "植物蛋白",
+        "葉酸"
+      ],
+      "why": "高蛋白 + 葉酸。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鷹嘴豆",
+      "en": "Chickpeas",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "植物蛋白",
+        "纖維"
+      ],
+      "why": "植物蛋白。",
+      "note": "煮熟，hummus OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "紅腰豆（煮熟）",
+      "en": "Cooked Kidney Beans",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "蛋白質"
+      ],
+      "why": "植物鐵。",
+      "note": "必須完全煮熟。",
+      "sources": "NHS"
+    },
+    {
+      "name": "黑豆",
+      "en": "Black Beans",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "蛋白質"
+      ],
+      "why": "高纖維。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "扁豆／小扁豆",
+      "en": "Lentils",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "葉酸"
+      ],
+      "why": "植物鐵 + 葉酸。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "杏仁",
+      "en": "Almonds",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "好脂肪",
+        "維他命E"
+      ],
+      "why": "健康脂肪。",
+      "note": "每日一手掌量。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "核桃",
+      "en": "Walnuts",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "Omega-3",
+        "好脂肪"
+      ],
+      "why": "植物 Omega-3。",
+      "note": "每日一手掌量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "腰果",
+      "en": "Cashews",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "鎂",
+        "鋅"
+      ],
+      "why": "鎂同鋅來源。",
+      "note": "無鹽版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "花生／花生醬",
+      "en": "Peanuts/Peanut Butter",
+      "icon": "🥜",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "如孕婦無花生過敏，可正常食。",
+      "note": "揀無糖花生醬。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "奇亞籽",
+      "en": "Chia Seeds",
+      "icon": "⚫",
+      "status": "safe",
+      "tags": [
+        "Omega-3",
+        "纖維"
+      ],
+      "why": "Omega-3 + 纖維。",
+      "note": "加入燕麥或乳酪。",
+      "sources": "USDA"
+    },
+    {
+      "name": "亞麻籽",
+      "en": "Flax Seeds",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "Omega-3",
+        "纖維"
+      ],
+      "why": "Omega-3。",
+      "note": "磨粉用更好吸收。",
+      "sources": "USDA"
+    },
+    {
+      "name": "水",
+      "en": "Water",
+      "icon": "💧",
+      "status": "safe",
+      "tags": [
+        "水份"
+      ],
+      "why": "基本水分。",
+      "note": "每日 2.5L 以上。",
+      "sources": "NHS"
+    },
+    {
+      "name": "鮮榨果汁（自製）",
+      "en": "Fresh Juice (Home)",
+      "icon": "🧃",
+      "status": "caution",
+      "tags": [
+        "糖份"
+      ],
+      "why": "糖份高，營養不及原果。",
+      "note": "少量。揀完整水果好過。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "未消毒果汁",
+      "en": "Unpasteurized Juice",
+      "icon": "🧃",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "細菌風險。",
+      "note": "避免街邊現榨、農場直銷。",
+      "sources": "FDA"
+    },
+    {
+      "name": "咖啡",
+      "en": "Coffee",
+      "icon": "☕",
+      "status": "caution",
+      "tags": [
+        "咖啡因"
+      ],
+      "why": "咖啡因過量增加流產風險。",
+      "note": "每日 < 200mg（約 1 杯）。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "綠茶／紅茶",
+      "en": "Green/Black Tea",
+      "icon": "🍵",
+      "status": "caution",
+      "tags": [
+        "咖啡因",
+        "單寧"
+      ],
+      "why": "咖啡因 + 單寧影響鐵吸收。",
+      "note": "每日 < 2 杯，飯前飯後 1 小時內唔好飲。",
+      "sources": "NHS"
+    },
+    {
+      "name": "花茶（無咖啡因）",
+      "en": "Herbal Tea",
+      "icon": "🍵",
+      "status": "caution",
+      "tags": [
+        "要查藥草"
+      ],
+      "why": "部分藥草孕婦唔啱。",
+      "note": "避免：薄荷大量、洋甘菊、覆盆子葉、人參茶。",
+      "sources": "NHS"
+    },
+    {
+      "name": "洋甘菊茶",
+      "en": "Chamomile Tea",
+      "icon": "🍵",
+      "status": "avoid",
+      "tags": [
+        "子宮收縮"
+      ],
+      "why": "可能引起子宮收縮。",
+      "note": "完全避免。",
+      "sources": "NHS"
+    },
+    {
+      "name": "豆漿（自製未煮）",
+      "en": "Raw Soy Milk",
+      "icon": "🥛",
+      "status": "avoid",
+      "tags": [
+        "毒素"
+      ],
+      "why": "生豆漿含皂素，有毒。",
+      "note": "必須煮滾。",
+      "sources": "HK 衞生署"
+    },
+    {
+      "name": "酒精／啤酒／紅酒",
+      "en": "Alcohol",
+      "icon": "🍷",
+      "status": "avoid",
+      "tags": [
+        "胎兒酒精綜合症"
+      ],
+      "why": "無安全劑量。",
+      "note": "完全戒酒。煮餸蒸發 OK。",
+      "sources": "WHO"
+    },
+    {
+      "name": "能量飲料",
+      "en": "Energy Drinks",
+      "icon": "⚡",
+      "status": "avoid",
+      "tags": [
+        "高咖啡因"
+      ],
+      "why": "咖啡因 + 添加劑過量。",
+      "note": "完全避免。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "碳酸飲品",
+      "en": "Soda",
+      "icon": "🥤",
+      "status": "caution",
+      "tags": [
+        "糖",
+        "咖啡因"
+      ],
+      "why": "高糖 + 部分有咖啡因。",
+      "note": "少飲。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "椰青水",
+      "en": "Coconut Water",
+      "icon": "🥥",
+      "status": "safe",
+      "tags": [
+        "電解質"
+      ],
+      "why": "天然電解質。",
+      "note": "消暑解渴。",
+      "sources": "USDA"
+    },
+    {
+      "name": "奶昔（消毒奶）",
+      "en": "Milkshake",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "鈣"
+      ],
+      "why": "巴士德消毒奶 OK。",
+      "note": "屋企做控制糖份。",
+      "sources": "NHS"
+    },
+    {
+      "name": "黑朱古力",
+      "en": "Dark Chocolate",
+      "icon": "🍫",
+      "status": "caution",
+      "tags": [
+        "咖啡因",
+        "抗氧化"
+      ],
+      "why": "少量 OK，但有咖啡因。",
+      "note": "每日 < 30g。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "白朱古力",
+      "en": "White Chocolate",
+      "icon": "🍫",
+      "status": "safe",
+      "tags": [
+        "糖份"
+      ],
+      "why": "無咖啡因。",
+      "note": "高糖少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "焦糖／糖果",
+      "en": "Candy",
+      "icon": "🍬",
+      "status": "caution",
+      "tags": [
+        "糖份"
+      ],
+      "why": "純糖無營養。",
+      "note": "少食。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "蛋糕（巴士德蛋）",
+      "en": "Cake",
+      "icon": "🎂",
+      "status": "caution",
+      "tags": [
+        "糖"
+      ],
+      "why": "用消毒蛋OK。避免生蛋裝飾。",
+      "note": "避免提拉米蘇、慕絲（生蛋）。",
+      "sources": "NHS"
+    },
+    {
+      "name": "雪糕（巴士德）",
+      "en": "Ice Cream",
+      "icon": "🍦",
+      "status": "safe",
+      "tags": [
+        "鈣"
+      ],
+      "why": "商業雪糕 OK。",
+      "note": "避免自製生蛋雪糕。",
+      "sources": "NHS"
+    },
+    {
+      "name": "曲奇",
+      "en": "Cookies",
+      "icon": "🍪",
+      "status": "safe",
+      "tags": [
+        "糖份"
+      ],
+      "why": "焗熟 OK。",
+      "note": "避免生 cookie dough。",
+      "sources": "FDA"
+    },
+    {
+      "name": "薯片",
+      "en": "Chips",
+      "icon": "🍟",
+      "status": "caution",
+      "tags": [
+        "高鈉",
+        "油"
+      ],
+      "why": "高鈉高油。",
+      "note": "少食。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "鹽",
+      "en": "Salt",
+      "icon": "🧂",
+      "status": "caution",
+      "tags": [
+        "鈉"
+      ],
+      "why": "過量增加水腫、高血壓風險。",
+      "note": "每日 < 5g。",
+      "sources": "WHO"
+    },
+    {
+      "name": "糖",
+      "en": "Sugar",
+      "icon": "🍯",
+      "status": "caution",
+      "tags": [
+        "糖份"
+      ],
+      "why": "過量增加妊娠糖尿。",
+      "note": "每日 < 50g 添加糖。",
+      "sources": "WHO"
+    },
+    {
+      "name": "蜜糖",
+      "en": "Honey",
+      "icon": "🍯",
+      "status": "safe",
+      "tags": [
+        "孕婦OK"
+      ],
+      "why": "孕婦食用安全。",
+      "note": "BB 1 歲前唔可以食。適量。",
+      "sources": "NHS"
+    },
+    {
+      "name": "楓糖漿",
+      "en": "Maple Syrup",
+      "icon": "🍯",
+      "status": "safe",
+      "tags": [
+        "糖份"
+      ],
+      "why": "天然糖。",
+      "note": "少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "醬油",
+      "en": "Soy Sauce",
+      "icon": "🟤",
+      "status": "safe",
+      "tags": [
+        "鈉"
+      ],
+      "why": "少量 OK。",
+      "note": "高鈉，控制份量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "醋",
+      "en": "Vinegar",
+      "icon": "🍶",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "煮食 OK。",
+      "note": "任何醋都 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "辣椒",
+      "en": "Chili",
+      "icon": "🌶",
+      "status": "safe",
+      "tags": [
+        "維他命C"
+      ],
+      "why": "科學上對胎兒無害。",
+      "note": "如有胃灼熱要少食。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "咖喱／香料",
+      "en": "Curry/Spices",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "安全。",
+      "note": "如有胃灼熱少食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "生薑",
+      "en": "Ginger",
+      "icon": "🫚",
+      "status": "safe",
+      "tags": [
+        "止孕吐"
+      ],
+      "why": "科學證實止孕吐。",
+      "note": "每日 < 1g 乾薑或 4g 鮮薑。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "蒜頭",
+      "en": "Garlic",
+      "icon": "🧄",
+      "status": "safe",
+      "tags": [
+        "抗炎"
+      ],
+      "why": "抗炎抗菌。",
+      "note": "煮食、生食均可。",
+      "sources": "USDA"
+    },
+    {
+      "name": "薄荷（大量）",
+      "en": "Mint (Large Amount)",
+      "icon": "🌱",
+      "status": "caution",
+      "tags": [
+        "子宮"
+      ],
+      "why": "少量 OK，大量可能刺激。",
+      "note": "少量調味 OK。避免大量薄荷茶。",
+      "sources": "NHS"
+    },
+    {
+      "name": "覆盆子葉茶",
+      "en": "Raspberry Leaf Tea",
+      "icon": "🍵",
+      "status": "avoid",
+      "tags": [
+        "子宮收縮"
+      ],
+      "why": "傳統催生用。",
+      "note": "避免，除非醫生建議第三期。",
+      "sources": "NHS"
+    },
+    {
+      "name": "當歸",
+      "en": "Dong Quai",
+      "icon": "🌿",
+      "status": "avoid",
+      "tags": [
+        "子宮收縮"
+      ],
+      "why": "中醫認為活血，可能流產。",
+      "note": "孕期完全避免。",
+      "sources": "中醫"
+    },
+    {
+      "name": "紅花",
+      "en": "Safflower",
+      "icon": "🌸",
+      "status": "avoid",
+      "tags": [
+        "活血"
+      ],
+      "why": "中醫活血藥。",
+      "note": "孕期完全避免。",
+      "sources": "中醫"
+    },
+    {
+      "name": "人參",
+      "en": "Ginseng",
+      "icon": "🌿",
+      "status": "avoid",
+      "tags": [
+        "中藥"
+      ],
+      "why": "可能增加流產風險。",
+      "note": "孕期避免。",
+      "sources": "中醫、ACOG"
+    },
+    {
+      "name": "螺旋藻",
+      "en": "Spirulina",
+      "icon": "🟢",
+      "status": "caution",
+      "tags": [
+        "補充劑"
+      ],
+      "why": "來源唔明可能有重金屬。",
+      "note": "如要食揀有認證品牌，先諮詢醫生。",
+      "sources": "FDA"
+    },
+    {
+      "name": "豬腳薑（坐月）",
+      "en": "Pig Trotter Vinegar",
+      "icon": "🐷",
+      "status": "caution",
+      "tags": [
+        "坐月"
+      ],
+      "why": "傳統坐月補品，含醋活血。",
+      "note": "⚠️ 孕期建議唔好食，產後先食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "燕窩",
+      "en": "Bird's Nest",
+      "icon": "🪺",
+      "status": "safe",
+      "tags": [
+        "傳統補品"
+      ],
+      "why": "傳統認為補氣血。科學證據有限。",
+      "note": "揀有認證來源。",
+      "sources": "中醫"
+    },
+    {
+      "name": "花膠",
+      "en": "Fish Maw",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "膠原蛋白"
+      ],
+      "why": "膠原蛋白。",
+      "note": "煲湯 OK。",
+      "sources": "中醫"
+    },
+    {
+      "name": "海參",
+      "en": "Sea Cucumber",
+      "icon": "🟤",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "高蛋白低脂。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鮑魚",
+      "en": "Abalone",
+      "icon": "🐚",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "高蛋白低汞。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "紅棗",
+      "en": "Red Dates",
+      "icon": "🟥",
+      "status": "safe",
+      "tags": [
+        "補血",
+        "傳統"
+      ],
+      "why": "中醫認為補血。",
+      "note": "煲湯加 4-6 粒。",
+      "sources": "中醫"
+    },
+    {
+      "name": "杞子",
+      "en": "Goji Berries",
+      "icon": "🔴",
+      "status": "safe",
+      "tags": [
+        "抗氧化"
+      ],
+      "why": "維他命A、C。",
+      "note": "煲湯加少許。",
+      "sources": "USDA"
+    },
+    {
+      "name": "龜苓膏",
+      "en": "Tortoise Jelly",
+      "icon": "⚫",
+      "status": "avoid",
+      "tags": [
+        "寒涼",
+        "龜板"
+      ],
+      "why": "含龜板，中醫認為孕婦避免。",
+      "note": "完全避免。",
+      "sources": "中醫"
+    },
+    {
+      "name": "涼茶（含羅漢果以外）",
+      "en": "Herbal Tea (HK)",
+      "icon": "🍵",
+      "status": "caution",
+      "tags": [
+        "藥草"
+      ],
+      "why": "配方藥草未必啱孕婦。",
+      "note": "如要飲先諮詢中醫師。",
+      "sources": "中醫"
+    },
+    {
+      "name": "鴨胗／雞胗",
+      "en": "Gizzards",
+      "icon": "🍖",
+      "status": "safe",
+      "tags": [
+        "補鐵"
+      ],
+      "why": "鐵質高。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "魚蛋（街頭）",
+      "en": "Street Fish Balls",
+      "icon": "⚪",
+      "status": "caution",
+      "tags": [
+        "衞生"
+      ],
+      "why": "街頭衛生狀況參差。",
+      "note": "揀信譽店舖，徹底加熱。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "豆腐花",
+      "en": "Tofu Pudding",
+      "icon": "⚪",
+      "status": "safe",
+      "tags": [
+        "植物蛋白"
+      ],
+      "why": "豆製品 OK。",
+      "note": "揀信譽店舖。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豉油雞",
+      "en": "Soy Sauce Chicken",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全煮熟 OK。",
+      "note": "少食皮減鈉。",
+      "sources": "USDA"
+    },
+    {
+      "name": "叉燒",
+      "en": "Char Siu",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全烤熟 OK。",
+      "note": "少食肥膏。",
+      "sources": "USDA"
+    },
+    {
+      "name": "火鍋（徹底煮）",
+      "en": "Hot Pot",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "要煮熟"
+      ],
+      "why": "確保所有食物完全熟。",
+      "note": "⚠️ 唔好半生熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "紅衫魚",
+      "en": "Golden Threadfin Bream",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "香港常見低汞魚。",
+      "note": "完全煮熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "黃花魚",
+      "en": "Yellow Croaker",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "補DHA"
+      ],
+      "why": "低汞，DHA 來源。",
+      "note": "完全煮熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "龍躉",
+      "en": "Giant Grouper",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞優質魚。",
+      "note": "完全煮熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "鯇魚",
+      "en": "Grass Carp",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "淡水魚低汞。",
+      "note": "完全煮熟，注意有骨。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "大眼雞",
+      "en": "Bigeye Snapper",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低汞"
+      ],
+      "why": "低汞港式常見。",
+      "note": "完全煮熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "瀨尿蝦",
+      "en": "Mantis Shrimp",
+      "icon": "🦐",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞蛋白來源。",
+      "note": "完全煮熟（變橙紅）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "花蟹",
+      "en": "Flower Crab",
+      "icon": "🦀",
+      "status": "safe",
+      "tags": [
+        "低汞",
+        "蛋白質"
+      ],
+      "why": "低汞海鮮。",
+      "note": "完全煮熟，避免醉蟹（生）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "扇貝（已煮熟）",
+      "en": "Cooked Scallops",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "低汞"
+      ],
+      "why": "低汞蛋白來源。",
+      "note": "完全煮熟（不透明）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "生扇貝",
+      "en": "Raw Scallops",
+      "icon": "🟡",
+      "status": "avoid",
+      "tags": [
+        "細菌"
+      ],
+      "why": "生食有細菌風險。",
+      "note": "日式生扇貝刺身避免。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "甜蝦／甘蝦",
+      "en": "Sweet Shrimp",
+      "icon": "🦐",
+      "status": "avoid",
+      "tags": [
+        "生食"
+      ],
+      "why": "日式生甜蝦未煮熟。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "雞胸",
+      "en": "Chicken Breast",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "高蛋白",
+        "低脂",
+        "健身"
+      ],
+      "why": "健身孕婦首選。",
+      "note": "完全煮熟（內部 74°C+）。",
+      "sources": "USDA"
+    },
+    {
+      "name": "雞髀",
+      "en": "Chicken Thigh",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "比雞胸更嫩多汁。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "雞翼",
+      "en": "Chicken Wings",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全煮熟 OK。",
+      "note": "避免半生熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "牛腩",
+      "en": "Beef Brisket",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "煲煮"
+      ],
+      "why": "鐵質豐富，適合燉湯。",
+      "note": "煲到完全熟透。",
+      "sources": "USDA"
+    },
+    {
+      "name": "牛展",
+      "en": "Beef Shank",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "膠原",
+        "補鐵"
+      ],
+      "why": "膠原蛋白 + 鐵。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豬骨",
+      "en": "Pork Bones",
+      "icon": "🦴",
+      "status": "safe",
+      "tags": [
+        "煲湯",
+        "鈣"
+      ],
+      "why": "煲湯增加鈣同膠原。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豬肝",
+      "en": "Pork Liver",
+      "icon": "🩸",
+      "status": "caution",
+      "tags": [
+        "補鐵",
+        "維他命A"
+      ],
+      "why": "極高鐵但過量維他命A致畸。",
+      "note": "每兩星期一次，每次 75g 以內。",
+      "sources": "NHS"
+    },
+    {
+      "name": "雞肝",
+      "en": "Chicken Liver",
+      "icon": "🩸",
+      "status": "caution",
+      "tags": [
+        "補鐵",
+        "維他命A"
+      ],
+      "why": "鐵高但維他命 A 過量風險。",
+      "note": "每月 1-2 次，少量。",
+      "sources": "NHS"
+    },
+    {
+      "name": "溫泉蛋",
+      "en": "Onsen Egg",
+      "icon": "🥚",
+      "status": "avoid",
+      "tags": [
+        "半熟"
+      ],
+      "why": "日式半熟蛋。",
+      "note": "沙門氏菌風險，避免。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "溏心蛋",
+      "en": "Soft-Boiled Egg",
+      "icon": "🥚",
+      "status": "avoid",
+      "tags": [
+        "半熟"
+      ],
+      "why": "蛋黃未熟。",
+      "note": "避免，要全熟。",
+      "sources": "NHS"
+    },
+    {
+      "name": "莫扎拉芝士（消毒）",
+      "en": "Pasteurized Mozzarella",
+      "icon": "🧀",
+      "status": "safe",
+      "tags": [
+        "補鈣"
+      ],
+      "why": "超市買嘅一般都消毒過。",
+      "note": "確認包裝寫 pasteurized。",
+      "sources": "NHS"
+    },
+    {
+      "name": "切達芝士",
+      "en": "Cheddar Cheese",
+      "icon": "🧀",
+      "status": "safe",
+      "tags": [
+        "補鈣",
+        "蛋白質"
+      ],
+      "why": "硬芝士安全。",
+      "note": "任何 cheddar OK。",
+      "sources": "NHS"
+    },
+    {
+      "name": "煉奶",
+      "en": "Condensed Milk",
+      "icon": "🥛",
+      "status": "caution",
+      "tags": [
+        "高糖"
+      ],
+      "why": "消毒過但糖份極高。",
+      "note": "少量調味用 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "淡奶",
+      "en": "Evaporated Milk",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "補鈣"
+      ],
+      "why": "消毒過 OK。",
+      "note": "煮食用 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "火龍果",
+      "en": "Dragon Fruit",
+      "icon": "🐉",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "維他命C"
+      ],
+      "why": "低糖高纖。",
+      "note": "洗皮先切。",
+      "sources": "USDA"
+    },
+    {
+      "name": "楊桃",
+      "en": "Star Fruit",
+      "icon": "⭐",
+      "status": "caution",
+      "tags": [
+        "腎"
+      ],
+      "why": "含草酸，腎功能差者避免。",
+      "note": "健康孕婦少量 OK。",
+      "sources": "NIH"
+    },
+    {
+      "name": "榴槤",
+      "en": "Durian",
+      "icon": "🟡",
+      "status": "caution",
+      "tags": [
+        "高糖",
+        "熱量"
+      ],
+      "why": "糖份熱量極高，妊娠糖尿避免。",
+      "note": "健康孕婦少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "山楂",
+      "en": "Hawthorn",
+      "icon": "🔴",
+      "status": "avoid",
+      "tags": [
+        "子宮收縮"
+      ],
+      "why": "傳統認為刺激子宮。",
+      "note": "孕期避免，包括山楂餅。",
+      "sources": "中醫"
+    },
+    {
+      "name": "杏",
+      "en": "Apricot",
+      "icon": "🟠",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "纖維"
+      ],
+      "why": "β-胡蘿蔔素。",
+      "note": "新鮮或乾貨 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "李子",
+      "en": "Plum",
+      "icon": "🟣",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "抗氧化"
+      ],
+      "why": "幫助便秘。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "布冧",
+      "en": "Prune",
+      "icon": "🟣",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "止便秘"
+      ],
+      "why": "超強止便秘。",
+      "note": "每日 3-4 粒。",
+      "sources": "USDA"
+    },
+    {
+      "name": "提子乾",
+      "en": "Raisins",
+      "icon": "🍇",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "糖份"
+      ],
+      "why": "鐵質豐富。",
+      "note": "少量 OK，糖份高。",
+      "sources": "USDA"
+    },
+    {
+      "name": "杏脯／提子乾",
+      "en": "Dried Apricots",
+      "icon": "🟠",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "纖維"
+      ],
+      "why": "鐵 + 纖維。",
+      "note": "揀無硫磺處理嘅。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蔓越莓",
+      "en": "Cranberries",
+      "icon": "🔴",
+      "status": "safe",
+      "tags": [
+        "泌尿",
+        "抗氧化"
+      ],
+      "why": "防泌尿道感染。",
+      "note": "無糖版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "覆盆子",
+      "en": "Raspberries",
+      "icon": "🔴",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "維他命C"
+      ],
+      "why": "高纖維。",
+      "note": "⚠️ 覆盆子葉茶要避免（催生），果實 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "黑莓",
+      "en": "Blackberries",
+      "icon": "⚫",
+      "status": "safe",
+      "tags": [
+        "抗氧化"
+      ],
+      "why": "高抗氧化。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "柚子／葡萄柚",
+      "en": "Pomelo/Grapefruit",
+      "icon": "🍊",
+      "status": "caution",
+      "tags": [
+        "藥物相互"
+      ],
+      "why": "葡萄柚影響某啲藥物代謝。",
+      "note": "如食緊藥諮詢醫生。",
+      "sources": "FDA"
+    },
+    {
+      "name": "柿",
+      "en": "Persimmon",
+      "icon": "🟠",
+      "status": "caution",
+      "tags": [
+        "單寧"
+      ],
+      "why": "空肚食可能凝結成石。",
+      "note": "飯後食，少量。",
+      "sources": "中醫"
+    },
+    {
+      "name": "椰子（新鮮）",
+      "en": "Coconut",
+      "icon": "🥥",
+      "status": "safe",
+      "tags": [
+        "MCT"
+      ],
+      "why": "中鏈脂肪酸。",
+      "note": "適量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "生菜",
+      "en": "Lettuce",
+      "icon": "🥗",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "生菜外面可能有李斯特菌。",
+      "note": "屋企徹底洗淨 OK，外面餐廳避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "沙律菜",
+      "en": "Mixed Greens",
+      "icon": "🥗",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "預先包裝沙律菜風險高。",
+      "note": "自己洗淨。",
+      "sources": "FDA"
+    },
+    {
+      "name": "羅勒（九層塔）",
+      "en": "Basil",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "煮食調味 OK。",
+      "note": "少量用。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芫茜",
+      "en": "Cilantro",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "調味",
+        "維他命K"
+      ],
+      "why": "煮食 OK。",
+      "note": "徹底洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "葱",
+      "en": "Spring Onion",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "基本調味料。",
+      "note": "洗淨切碎。",
+      "sources": "USDA"
+    },
+    {
+      "name": "洋葱",
+      "en": "Onion",
+      "icon": "🧅",
+      "status": "safe",
+      "tags": [
+        "血液循環",
+        "抗氧化"
+      ],
+      "why": "幫助血液循環。",
+      "note": "煮食、生食均可。",
+      "sources": "USDA"
+    },
+    {
+      "name": "韮菜",
+      "en": "Chives",
+      "icon": "🌿",
+      "status": "caution",
+      "tags": [
+        "子宮收縮"
+      ],
+      "why": "中醫認為性溫可能刺激。",
+      "note": "少量 OK，避免大量。",
+      "sources": "中醫"
+    },
+    {
+      "name": "九層塔／羅勒",
+      "en": "Thai Basil",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "少量調味 OK。",
+      "note": "避免大量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "枸杞菜",
+      "en": "Wolfberry Leaves",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "補血",
+        "葉酸"
+      ],
+      "why": "傳統補血菜。",
+      "note": "煮湯或炒。",
+      "sources": "中醫"
+    },
+    {
+      "name": "蘆筍",
+      "en": "Asparagus",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "補葉酸"
+      ],
+      "why": "葉酸極高。",
+      "note": "蒸或灼。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豌豆／甜豆",
+      "en": "Snap Peas",
+      "icon": "🟢",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "蛋白質"
+      ],
+      "why": "清甜健康。",
+      "note": "灼或快炒。",
+      "sources": "USDA"
+    },
+    {
+      "name": "四季豆",
+      "en": "Green Beans",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "⚠️ 一定要徹底煮熟（生有毒素）。",
+      "note": "煮到完全軟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "甜椒（紅／黃／青）",
+      "en": "Bell Pepper",
+      "icon": "🫑",
+      "status": "safe",
+      "tags": [
+        "維他命C"
+      ],
+      "why": "維他命 C 極高。",
+      "note": "洗淨。",
+      "sources": "USDA"
+    },
+    {
+      "name": "茄子",
+      "en": "Eggplant",
+      "icon": "🍆",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "低卡纖維。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "冬菇／香菇",
+      "en": "Shiitake Mushroom",
+      "icon": "🍄",
+      "status": "safe",
+      "tags": [
+        "維他命D"
+      ],
+      "why": "曬乾嘅含維他命D。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蘑菇／白菇",
+      "en": "Button Mushroom",
+      "icon": "🍄",
+      "status": "safe",
+      "tags": [
+        "B群"
+      ],
+      "why": "B 雜豐富。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "金針菇",
+      "en": "Enoki Mushroom",
+      "icon": "🍄",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "2020 全球李斯特菌爆發來源。",
+      "note": "必須完全煮熟（74°C+）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "米粉／粉絲",
+      "en": "Rice Vermicelli",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "基本主食。",
+      "note": "任何菜式都用。",
+      "sources": "USDA"
+    },
+    {
+      "name": "河粉",
+      "en": "Rice Noodles",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "無麩質碳水。",
+      "note": "煮熟即食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "烏冬",
+      "en": "Udon",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "日式麵食。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "拉麵",
+      "en": "Ramen",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "日式湯麵。",
+      "note": "煮熟。揀少鹽湯底。",
+      "sources": "USDA"
+    },
+    {
+      "name": "墨西哥薄餅（Tortilla）",
+      "en": "Tortilla",
+      "icon": "🥙",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "基本主食。",
+      "note": "全麥版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "法包／法式長棍",
+      "en": "Baguette",
+      "icon": "🥖",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少食吧因為缺營養。",
+      "sources": "USDA"
+    },
+    {
+      "name": "開心果",
+      "en": "Pistachios",
+      "icon": "🥜",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "纖維"
+      ],
+      "why": "高蛋白纖維。",
+      "note": "無鹽版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "夏威夷果",
+      "en": "Macadamia",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "好脂肪"
+      ],
+      "why": "健康脂肪。",
+      "note": "少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "巴西果",
+      "en": "Brazil Nuts",
+      "icon": "🌰",
+      "status": "caution",
+      "tags": [
+        "硒"
+      ],
+      "why": "硒含量極高，過量有害。",
+      "note": "每日最多 2-3 粒。",
+      "sources": "NHS"
+    },
+    {
+      "name": "松子",
+      "en": "Pine Nuts",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "好脂肪"
+      ],
+      "why": "健康脂肪。",
+      "note": "少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芝麻",
+      "en": "Sesame",
+      "icon": "⚫",
+      "status": "safe",
+      "tags": [
+        "補鈣"
+      ],
+      "why": "高鈣。",
+      "note": "白芝麻、黑芝麻均可。",
+      "sources": "USDA"
+    },
+    {
+      "name": "黃豆",
+      "en": "Soybeans",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "植物蛋白"
+      ],
+      "why": "高蛋白。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白豆／白腰豆",
+      "en": "White Beans",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "植物蛋白纖維。",
+      "note": "煮熟食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豆角／長豆",
+      "en": "Long Beans",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "完全煮熟 OK。",
+      "note": "必須完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "無咖啡因咖啡",
+      "en": "Decaf Coffee",
+      "icon": "☕",
+      "status": "safe",
+      "tags": [
+        "代替"
+      ],
+      "why": "無咖啡因 OK。",
+      "note": "仍含少量咖啡因（< 5mg）。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "無咖啡因茶",
+      "en": "Decaf Tea",
+      "icon": "🍵",
+      "status": "safe",
+      "tags": [
+        "代替"
+      ],
+      "why": "安全選擇。",
+      "note": "OK。",
+      "sources": "NHS"
+    },
+    {
+      "name": "羅漢果茶",
+      "en": "Monk Fruit Tea",
+      "icon": "🍵",
+      "status": "safe",
+      "tags": [
+        "天然甜"
+      ],
+      "why": "零糖天然甜味。",
+      "note": "OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "南非茶（Rooibos）",
+      "en": "Rooibos Tea",
+      "icon": "🍵",
+      "status": "safe",
+      "tags": [
+        "無咖啡因"
+      ],
+      "why": "無咖啡因草本。",
+      "note": "安全選擇。",
+      "sources": "NHS"
+    },
+    {
+      "name": "姜茶",
+      "en": "Ginger Tea",
+      "icon": "🍵",
+      "status": "safe",
+      "tags": [
+        "止孕吐"
+      ],
+      "why": "科學證實止孕吐。",
+      "note": "每日適量。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "檸檬水",
+      "en": "Lemon Water",
+      "icon": "🍋",
+      "status": "safe",
+      "tags": [
+        "維他命C",
+        "止孕吐"
+      ],
+      "why": "維他命C + 止吐。",
+      "note": "飲後漱口防牙齒酸蝕。",
+      "sources": "NHS"
+    },
+    {
+      "name": "運動飲品（電解質）",
+      "en": "Sports Drinks",
+      "icon": "💧",
+      "status": "caution",
+      "tags": [
+        "糖"
+      ],
+      "why": "糖份高但運動後可。",
+      "note": "少飲。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "汽水（無糖）",
+      "en": "Diet Soda",
+      "icon": "🥤",
+      "status": "caution",
+      "tags": [
+        "代糖"
+      ],
+      "why": "代糖長期未明。",
+      "note": "少飲。",
+      "sources": "FDA"
+    },
+    {
+      "name": "乳清蛋白粉",
+      "en": "Whey Protein",
+      "icon": "🥤",
+      "status": "caution",
+      "tags": [
+        "補充劑"
+      ],
+      "why": "揀有認證品牌，避免添加物。",
+      "note": "先諮詢醫生。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "營養奶昔（孕婦專用）",
+      "en": "Prenatal Shakes",
+      "icon": "🥤",
+      "status": "safe",
+      "tags": [
+        "補充"
+      ],
+      "why": "專為孕婦設計營養。",
+      "note": "揀有信譽品牌。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "鮑魚仔",
+      "en": "Baby Abalone",
+      "icon": "🐚",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "低汞優質蛋白。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "魚翅",
+      "en": "Shark Fin",
+      "icon": "🦈",
+      "status": "avoid",
+      "tags": [
+        "極高汞",
+        "環保"
+      ],
+      "why": "鯊魚高汞 + 殘忍。",
+      "note": "完全避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "魚骨",
+      "en": "Fish Bones",
+      "icon": "🦴",
+      "status": "safe",
+      "tags": [
+        "補鈣",
+        "煲湯"
+      ],
+      "why": "煲湯補鈣。",
+      "note": "完全煲熟去骨先食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豬皮",
+      "en": "Pork Skin",
+      "icon": "🐷",
+      "status": "caution",
+      "tags": [
+        "膠原",
+        "脂肪"
+      ],
+      "why": "膠原蛋白但脂肪高。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豆苗",
+      "en": "Pea Shoots",
+      "icon": "🌱",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "清甜易消化。",
+      "note": "快炒。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芽菜（豆芽，已煮熟）",
+      "en": "Bean Sprouts (Cooked)",
+      "icon": "🌱",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "煮熟 OK，生食避免。",
+      "note": "必須完全煮熟。",
+      "sources": "FDA"
+    },
+    {
+      "name": "竹笙",
+      "en": "Bamboo Pith",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "低卡纖維。",
+      "note": "煲湯食材。",
+      "sources": "USDA"
+    },
+    {
+      "name": "百合",
+      "en": "Lily Bulb",
+      "icon": "⚪",
+      "status": "safe",
+      "tags": [
+        "潤肺"
+      ],
+      "why": "傳統潤肺食材。",
+      "note": "煲湯或糖水。",
+      "sources": "中醫"
+    },
+    {
+      "name": "蓮子",
+      "en": "Lotus Seeds",
+      "icon": "⚪",
+      "status": "safe",
+      "tags": [
+        "補腎",
+        "健脾"
+      ],
+      "why": "傳統補品。",
+      "note": "煲湯糖水。",
+      "sources": "中醫"
+    },
+    {
+      "name": "淮山",
+      "en": "Chinese Yam",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "健脾"
+      ],
+      "why": "健脾胃。",
+      "note": "煲湯。",
+      "sources": "中醫"
+    },
+    {
+      "name": "蓮藕",
+      "en": "Lotus Root",
+      "icon": "⚪",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "補血"
+      ],
+      "why": "傳統補血。",
+      "note": "煲湯炒食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "馬蹄",
+      "en": "Water Chestnut",
+      "icon": "🟤",
+      "status": "safe",
+      "tags": [
+        "清熱"
+      ],
+      "why": "清熱解燥。",
+      "note": "煲湯食材。",
+      "sources": "中醫"
+    },
+    {
+      "name": "沙參",
+      "en": "Adenophora Root",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "潤肺"
+      ],
+      "why": "潤肺養陰。",
+      "note": "煲湯，份量 5-10g。",
+      "sources": "中醫"
+    },
+    {
+      "name": "玉竹",
+      "en": "Polygonatum",
+      "icon": "🌿",
+      "status": "safe",
+      "tags": [
+        "養陰"
+      ],
+      "why": "養陰潤燥。",
+      "note": "煲湯食材。",
+      "sources": "中醫"
+    },
+    {
+      "name": "無花果乾",
+      "en": "Dried Figs",
+      "icon": "🟤",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "鈣"
+      ],
+      "why": "高鈣高纖。",
+      "note": "煲湯或直接食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蜜棗",
+      "en": "Honey Dates",
+      "icon": "🟤",
+      "status": "safe",
+      "tags": [
+        "甜味",
+        "煲湯"
+      ],
+      "why": "湯水天然甜味。",
+      "note": "煲湯加 2-3 粒。",
+      "sources": "中醫"
+    },
+    {
+      "name": "花椒",
+      "en": "Sichuan Pepper",
+      "icon": "🟤",
+      "status": "caution",
+      "tags": [
+        "辛溫"
+      ],
+      "why": "少量調味 OK。",
+      "note": "大量可能刺激。",
+      "sources": "中醫"
+    },
+    {
+      "name": "八角",
+      "en": "Star Anise",
+      "icon": "⭐",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "煲湯燉肉調味。",
+      "note": "少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "陳皮",
+      "en": "Dried Tangerine Peel",
+      "icon": "🟠",
+      "status": "safe",
+      "tags": [
+        "健脾"
+      ],
+      "why": "健脾消滯。",
+      "note": "煲湯加 1 片。",
+      "sources": "中醫"
+    },
+    {
+      "name": "南北杏",
+      "en": "Almond Mix",
+      "icon": "🌰",
+      "status": "safe",
+      "tags": [
+        "潤肺"
+      ],
+      "why": "潤肺。",
+      "note": "煲湯食材。",
+      "sources": "中醫"
+    },
+    {
+      "name": "麥當勞漢堡",
+      "en": "McDonald's Burger",
+      "icon": "🍔",
+      "status": "caution",
+      "tags": [
+        "快餐",
+        "高鈉"
+      ],
+      "why": "完全煮熟 OK，但高鈉高脂。",
+      "note": "少食，避免半生牛肉。",
+      "sources": "USDA"
+    },
+    {
+      "name": "披薩（消毒芝士）",
+      "en": "Pizza",
+      "icon": "🍕",
+      "status": "safe",
+      "tags": [
+        "快餐"
+      ],
+      "why": "焗熟 OK。",
+      "note": "避免含未消毒軟芝士嘅。",
+      "sources": "NHS"
+    },
+    {
+      "name": "炸雞",
+      "en": "Fried Chicken",
+      "icon": "🍗",
+      "status": "caution",
+      "tags": [
+        "快餐",
+        "油炸"
+      ],
+      "why": "完全熟 OK 但高脂。",
+      "note": "少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "薯條",
+      "en": "French Fries",
+      "icon": "🍟",
+      "status": "caution",
+      "tags": [
+        "油炸",
+        "高鈉"
+      ],
+      "why": "高脂高鈉。",
+      "note": "少食。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "即食麵／公仔麵",
+      "en": "Instant Noodles",
+      "icon": "🍜",
+      "status": "caution",
+      "tags": [
+        "高鈉",
+        "加工"
+      ],
+      "why": "極高鈉 + 防腐劑。",
+      "note": "少食，自己加菜蛋有營養啲。",
+      "sources": "WHO"
+    },
+    {
+      "name": "罐頭湯",
+      "en": "Canned Soup",
+      "icon": "🥫",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "鈉含量高。",
+      "note": "揀低鈉版本。",
+      "sources": "WHO"
+    },
+    {
+      "name": "罐頭蔬菜",
+      "en": "Canned Vegetables",
+      "icon": "🥫",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "鈉高，新鮮好過。",
+      "note": "沖洗再煮減鈉。",
+      "sources": "USDA"
+    },
+    {
+      "name": "罐頭水果",
+      "en": "Canned Fruit",
+      "icon": "🥫",
+      "status": "caution",
+      "tags": [
+        "高糖"
+      ],
+      "why": "糖漿高糖。",
+      "note": "揀清水或自然汁版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "預製便當／飯盒",
+      "en": "Pre-made Bento",
+      "icon": "🍱",
+      "status": "caution",
+      "tags": [
+        "重新加熱"
+      ],
+      "why": "加熱不足李斯特菌風險。",
+      "note": "徹底翻熱（74°C+）。",
+      "sources": "NHS"
+    },
+    {
+      "name": "街邊小食",
+      "en": "Street Food",
+      "icon": "🍢",
+      "status": "caution",
+      "tags": [
+        "衞生"
+      ],
+      "why": "衞生狀況參差。",
+      "note": "揀信譽店舖，揀完全煮熟。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "產前綜合維他命",
+      "en": "Prenatal Vitamins",
+      "icon": "💊",
+      "status": "safe",
+      "tags": [
+        "補充"
+      ],
+      "why": "醫生通常建議。",
+      "note": "按醫生指示服用。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "葉酸補充劑",
+      "en": "Folic Acid",
+      "icon": "💊",
+      "status": "safe",
+      "tags": [
+        "補葉酸"
+      ],
+      "why": "預防神經管缺陷。",
+      "note": "每日 400-600 µg，孕前已開始。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "鐵丸",
+      "en": "Iron Supplement",
+      "icon": "💊",
+      "status": "safe",
+      "tags": [
+        "補鐵"
+      ],
+      "why": "預防貧血。",
+      "note": "按醫生處方。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "DHA／魚油",
+      "en": "DHA/Fish Oil",
+      "icon": "💊",
+      "status": "safe",
+      "tags": [
+        "補DHA"
+      ],
+      "why": "BB 腦發育。",
+      "note": "揀無汞認證品牌。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "益生菌",
+      "en": "Probiotics",
+      "icon": "💊",
+      "status": "safe",
+      "tags": [
+        "腸道"
+      ],
+      "why": "幫助腸道。",
+      "note": "先諮詢醫生。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "煎雞蛋（全熟）",
+      "en": "Fried Egg (Well Done)",
+      "icon": "🍳",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全熟 OK。",
+      "note": "蛋黃要凝固。",
+      "sources": "NHS"
+    },
+    {
+      "name": "水煮蛋",
+      "en": "Hard Boiled Egg",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "省時"
+      ],
+      "why": "完全熟最安全。",
+      "note": "煮 10+ 分鐘。",
+      "sources": "NHS"
+    },
+    {
+      "name": "蒸魚",
+      "en": "Steamed Fish",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "低油",
+        "補DHA"
+      ],
+      "why": "健康烹調。",
+      "note": "完全蒸熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "清炒蔬菜",
+      "en": "Stir-Fried Vegetables",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "健康烹調。",
+      "note": "快炒保營養。",
+      "sources": "USDA"
+    },
+    {
+      "name": "焗物",
+      "en": "Baked Food",
+      "icon": "🍞",
+      "status": "safe",
+      "tags": [
+        "低油"
+      ],
+      "why": "健康烹調。",
+      "note": "高溫殺菌。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白灼食物",
+      "en": "Blanched Food",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "低油"
+      ],
+      "why": "健康烹調。",
+      "note": "完全熟先食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "煙燻食物",
+      "en": "Smoked Food",
+      "icon": "🥓",
+      "status": "caution",
+      "tags": [
+        "亞硝酸鹽"
+      ],
+      "why": "亞硝酸鹽風險。",
+      "note": "少食。",
+      "sources": "WHO"
+    },
+    {
+      "name": "燒烤食物",
+      "en": "BBQ",
+      "icon": "🍢",
+      "status": "caution",
+      "tags": [
+        "致癌物"
+      ],
+      "why": "燒焦部分致癌物。",
+      "note": "避免燒焦部分。",
+      "sources": "WHO"
+    },
+    {
+      "name": "醃製食物",
+      "en": "Pickled Food",
+      "icon": "🥒",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "鈉極高。",
+      "note": "少食。",
+      "sources": "WHO"
+    },
+    {
+      "name": "發酵食物（韓國泡菜）",
+      "en": "Kimchi",
+      "icon": "🌶",
+      "status": "safe",
+      "tags": [
+        "益生菌"
+      ],
+      "why": "益生菌好處。",
+      "note": "揀消毒嘅商業品牌。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豉椒炒蜆",
+      "en": "Black Bean Clams",
+      "icon": "🦪",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "煮熟蜆 OK。",
+      "note": "必須完全煮熟（殼打開）。",
+      "sources": "FDA"
+    },
+    {
+      "name": "咕嚕肉",
+      "en": "Sweet and Sour Pork",
+      "icon": "🍖",
+      "status": "safe",
+      "tags": [
+        "高糖"
+      ],
+      "why": "完全熟 OK 但糖份高。",
+      "note": "少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白菜煲",
+      "en": "Cabbage Pot",
+      "icon": "🥬",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "健康家常。",
+      "note": "煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鹹蛋蒸肉餅",
+      "en": "Steamed Pork Patty",
+      "icon": "🍖",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "鹹蛋鈉高。",
+      "note": "少食鹹蛋部分。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蒸魚雲",
+      "en": "Steamed Fish Head",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "補DHA"
+      ],
+      "why": "魚頭 DHA 高。",
+      "note": "完全蒸熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鮮菇蒸雞",
+      "en": "Steamed Chicken Mushroom",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "清淡有營養。",
+      "note": "完全蒸熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豉油皇炒麵",
+      "en": "Soy Sauce Noodles",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "完全炒熟 OK。",
+      "note": "少鹽。",
+      "sources": "USDA"
+    },
+    {
+      "name": "乾炒牛河",
+      "en": "Beef Chow Fun",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "蛋白質"
+      ],
+      "why": "完全炒熟 OK。",
+      "note": "高油，少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "星洲炒米",
+      "en": "Singapore Noodles",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "咖喱風味 OK。",
+      "note": "完全熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "揚州炒飯",
+      "en": "Yangzhou Fried Rice",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "蛋白質"
+      ],
+      "why": "傳統 OK。",
+      "note": "完全炒熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "福建炒飯",
+      "en": "Fujian Fried Rice",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "完全炒熟 OK。",
+      "note": "少食較鹹版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "白粥",
+      "en": "Plain Congee",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "溫和",
+        "止孕吐"
+      ],
+      "why": "易消化止孕吐。",
+      "note": "基本主食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "艇仔粥",
+      "en": "Sampan Congee",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全煮熟 OK。",
+      "note": "揀有信譽店舖。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "魚片粥",
+      "en": "Fish Congee",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "溫和"
+      ],
+      "why": "完全煮熟 OK。",
+      "note": "低汞魚最好。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "豬潤粥",
+      "en": "Pork Liver Congee",
+      "icon": "🩸",
+      "status": "caution",
+      "tags": [
+        "維他命A"
+      ],
+      "why": "豬潤維他命A過量風險。",
+      "note": "少食，每兩星期一次。",
+      "sources": "NHS"
+    },
+    {
+      "name": "沙嗲牛肉麵",
+      "en": "Satay Beef Noodles",
+      "icon": "🍜",
+      "status": "safe",
+      "tags": [
+        "補鐵"
+      ],
+      "why": "牛肉鐵質。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "火腿通粉",
+      "en": "Ham Macaroni",
+      "icon": "🍝",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "火腿要徹底加熱。",
+      "note": "確保湯翻滾。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "西多士",
+      "en": "French Toast",
+      "icon": "🍞",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "完全焗熟 OK。",
+      "note": "少食糖漿。",
+      "sources": "USDA"
+    },
+    {
+      "name": "菠蘿包",
+      "en": "Pineapple Bun",
+      "icon": "🥐",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "焗熟 OK。",
+      "note": "高糖少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蛋撻",
+      "en": "Egg Tart",
+      "icon": "🥧",
+      "status": "safe",
+      "tags": [
+        "焗熟"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "叉燒包",
+      "en": "Char Siu Bao",
+      "icon": "🥟",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "蛋白質"
+      ],
+      "why": "蒸熟 OK。",
+      "note": "完全蒸熱。",
+      "sources": "USDA"
+    },
+    {
+      "name": "燒賣",
+      "en": "Siu Mai",
+      "icon": "🥟",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "蒸熟 OK。",
+      "note": "完全蒸熱。",
+      "sources": "USDA"
+    },
+    {
+      "name": "蝦餃",
+      "en": "Har Gow",
+      "icon": "🥟",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "蒸熟 OK。",
+      "note": "完全蒸熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "腸粉",
+      "en": "Cheung Fun",
+      "icon": "🤍",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "溫和"
+      ],
+      "why": "蒸製溫和。",
+      "note": "完全蒸熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豆漿油條（油條）",
+      "en": "Youtiao",
+      "icon": "🥖",
+      "status": "caution",
+      "tags": [
+        "油炸",
+        "明礬"
+      ],
+      "why": "傳統含明礬（鋁）。",
+      "note": "少食，揀無明礬版本。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "沙律雞蛋",
+      "en": "Egg Salad",
+      "icon": "🥗",
+      "status": "caution",
+      "tags": [
+        "蛋黃醬"
+      ],
+      "why": "商業蛋黃醬 OK，自家製要消毒蛋。",
+      "note": "確認用消毒蛋。",
+      "sources": "NHS"
+    },
+    {
+      "name": "凱撒沙律（消毒蛋）",
+      "en": "Caesar Salad",
+      "icon": "🥗",
+      "status": "caution",
+      "tags": [
+        "生蛋"
+      ],
+      "why": "傳統用生蛋黃，避免。",
+      "note": "揀無生蛋版本。",
+      "sources": "NHS"
+    },
+    {
+      "name": "雞肉沙律",
+      "en": "Chicken Salad",
+      "icon": "🥗",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全熟雞 + 屋企洗生菜 OK。",
+      "note": "外面餐廳避免。",
+      "sources": "FDA"
+    },
+    {
+      "name": "火腿芝士三文治",
+      "en": "Ham Cheese Sandwich",
+      "icon": "🥪",
+      "status": "caution",
+      "tags": [
+        "李斯特菌"
+      ],
+      "why": "火腿同軟芝士要小心。",
+      "note": "火腿翻熱，揀消毒硬芝士。",
+      "sources": "NHS"
+    },
+    {
+      "name": "BLT 三文治",
+      "en": "BLT Sandwich",
+      "icon": "🥪",
+      "status": "caution",
+      "tags": [
+        "生菜"
+      ],
+      "why": "煙肉要全熟，生菜要洗淨。",
+      "note": "屋企做更安全。",
+      "sources": "FDA"
+    },
+    {
+      "name": "三文魚 poke bowl",
+      "en": "Salmon Poke",
+      "icon": "🥗",
+      "status": "avoid",
+      "tags": [
+        "生魚"
+      ],
+      "why": "生三文魚。",
+      "note": "完全避免，揀煮熟版本。",
+      "sources": "FDA"
+    },
+    {
+      "name": "墨西哥牛肉卷",
+      "en": "Burrito",
+      "icon": "🌯",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "纖維"
+      ],
+      "why": "完全熟 OK。",
+      "note": "確保肉同芝士安全。",
+      "sources": "USDA"
+    },
+    {
+      "name": "墨西哥薄餅",
+      "en": "Quesadilla",
+      "icon": "🌮",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "焗熟 OK。",
+      "note": "揀消毒芝士。",
+      "sources": "NHS"
+    },
+    {
+      "name": "希臘酸奶 dip",
+      "en": "Tzatziki",
+      "icon": "🥒",
+      "status": "safe",
+      "tags": [
+        "益生菌"
+      ],
+      "why": "乳酪 dip OK。",
+      "note": "消毒乳酪。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鷹嘴豆蓉（Hummus）",
+      "en": "Hummus",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "植物蛋白"
+      ],
+      "why": "健康植物蛋白。",
+      "note": "配蔬菜或全麥餅。",
+      "sources": "USDA"
+    },
+    {
+      "name": "紫菜",
+      "en": "Nori",
+      "icon": "⬛",
+      "status": "safe",
+      "tags": [
+        "碘",
+        "纖維"
+      ],
+      "why": "碘質豐富，BB 腦發育需要。",
+      "note": "少量，避免過量碘。",
+      "sources": "NHS"
+    },
+    {
+      "name": "昆布／海帶",
+      "en": "Kelp",
+      "icon": "🟢",
+      "status": "caution",
+      "tags": [
+        "碘"
+      ],
+      "why": "碘含量極高，過量影響甲狀腺。",
+      "note": "少量，唔好每日食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "裙帶菜",
+      "en": "Wakame",
+      "icon": "🟢",
+      "status": "safe",
+      "tags": [
+        "碘",
+        "纖維"
+      ],
+      "why": "日式湯材料。",
+      "note": "適量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "羊棲菜",
+      "en": "Hijiki",
+      "icon": "⬛",
+      "status": "caution",
+      "tags": [
+        "砷"
+      ],
+      "why": "含無機砷風險。",
+      "note": "孕婦避免大量。",
+      "sources": "FDA"
+    },
+    {
+      "name": "穀物麥片（高糖）",
+      "en": "Sugary Cereal",
+      "icon": "🥣",
+      "status": "caution",
+      "tags": [
+        "高糖"
+      ],
+      "why": "糖份高。",
+      "note": "揀低糖版本。",
+      "sources": "WHO"
+    },
+    {
+      "name": "原味麥皮",
+      "en": "Plain Oatmeal",
+      "icon": "🥣",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "高纖低糖。",
+      "note": "自己加水果。",
+      "sources": "NHS"
+    },
+    {
+      "name": "全麥多士",
+      "en": "Whole Wheat Toast",
+      "icon": "🍞",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "比白多士好。",
+      "note": "配雞蛋或牛油果。",
+      "sources": "NHS"
+    },
+    {
+      "name": "格蘭諾拉麥片",
+      "en": "Granola",
+      "icon": "🥣",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "健康早餐。",
+      "note": "揀低糖版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鬆餅（消毒蛋）",
+      "en": "Pancakes",
+      "icon": "🥞",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少糖漿。",
+      "sources": "USDA"
+    },
+    {
+      "name": "鬆餅（Muffin）",
+      "en": "Muffin",
+      "icon": "🧁",
+      "status": "safe",
+      "tags": [
+        "焗物"
+      ],
+      "why": "焗熟 OK。",
+      "note": "揀低糖版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "貝果（Bagel）",
+      "en": "Bagel",
+      "icon": "🥯",
+      "status": "safe",
+      "tags": [
+        "碳水"
+      ],
+      "why": "基本主食。",
+      "note": "全麥版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "可頌",
+      "en": "Croissant",
+      "icon": "🥐",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "脂肪"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少食，高脂。",
+      "sources": "USDA"
+    },
+    {
+      "name": "龍眼肉（桂圓）",
+      "en": "Longan Pulp",
+      "icon": "🟤",
+      "status": "caution",
+      "tags": [
+        "燥熱"
+      ],
+      "why": "傳統補血但偏燥熱。",
+      "note": "少量，孕後期避免。",
+      "sources": "中醫"
+    },
+    {
+      "name": "花生（煲湯）",
+      "en": "Peanuts (Soup)",
+      "icon": "🥜",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "煲湯"
+      ],
+      "why": "湯料增加營養。",
+      "note": "完全煮熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "杜仲",
+      "en": "Eucommia",
+      "icon": "🌿",
+      "status": "caution",
+      "tags": [
+        "中藥"
+      ],
+      "why": "安胎中藥但要醫師指導。",
+      "note": "諮詢中醫先食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "黨參",
+      "en": "Codonopsis",
+      "icon": "🌿",
+      "status": "caution",
+      "tags": [
+        "中藥"
+      ],
+      "why": "補氣藥材，孕期要醫師指導。",
+      "note": "諮詢中醫先食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "北芪／黃芪",
+      "en": "Astragalus",
+      "icon": "🌿",
+      "status": "caution",
+      "tags": [
+        "中藥"
+      ],
+      "why": "補氣，孕期要醫師指導。",
+      "note": "諮詢中醫先食。",
+      "sources": "中醫"
+    },
+    {
+      "name": "枸杞子",
+      "en": "Goji Berries",
+      "icon": "🔴",
+      "status": "safe",
+      "tags": [
+        "補血"
+      ],
+      "why": "溫和補品。",
+      "note": "湯水加少量。",
+      "sources": "中醫"
+    },
+    {
+      "name": "芡實",
+      "en": "Foxnut",
+      "icon": "⚪",
+      "status": "safe",
+      "tags": [
+        "健脾"
+      ],
+      "why": "健脾止瀉。",
+      "note": "煲湯食材。",
+      "sources": "中醫"
+    },
+    {
+      "name": "赤小豆",
+      "en": "Red Beans (Small)",
+      "icon": "🫘",
+      "status": "safe",
+      "tags": [
+        "消水腫"
+      ],
+      "why": "利水消腫。",
+      "note": "煲湯或糖水。",
+      "sources": "中醫"
+    },
+    {
+      "name": "薏米",
+      "en": "Job's Tears",
+      "icon": "⚪",
+      "status": "caution",
+      "tags": [
+        "利水",
+        "子宮"
+      ],
+      "why": "⚠️ 中醫認為孕婦避免（祛濕力強）。",
+      "note": "早期避免，後期適量。",
+      "sources": "中醫"
+    },
+    {
+      "name": "當歸頭",
+      "en": "Angelica Head",
+      "icon": "🌿",
+      "status": "avoid",
+      "tags": [
+        "活血"
+      ],
+      "why": "⚠️ 活血，孕期避免。",
+      "note": "完全避免。",
+      "sources": "中醫"
+    },
+    {
+      "name": "魚蛋",
+      "en": "Fish Balls",
+      "icon": "⚪",
+      "status": "caution",
+      "tags": [
+        "加工"
+      ],
+      "why": "加工品高鈉。",
+      "note": "揀有信譽店舖，少食。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "咖喱魚蛋",
+      "en": "Curry Fish Balls",
+      "icon": "⚪",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "加工 + 高鈉。",
+      "note": "少食。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "碗仔翅",
+      "en": "Bowl Soup",
+      "icon": "🥣",
+      "status": "safe",
+      "tags": [
+        "熱食"
+      ],
+      "why": "煮熱 OK。",
+      "note": "揀有信譽店舖。",
+      "sources": "HK CFS"
+    },
+    {
+      "name": "煎釀三寶",
+      "en": "Stuffed Three Treasures",
+      "icon": "🌶",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "完全煎熟 OK。",
+      "note": "少食較鹹版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "砵仔糕",
+      "en": "Put Chai Ko",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "糖份"
+      ],
+      "why": "蒸製 OK。",
+      "note": "少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "雞蛋仔",
+      "en": "Egg Waffle",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "焗熟"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "格仔餅",
+      "en": "Waffle",
+      "icon": "🧇",
+      "status": "safe",
+      "tags": [
+        "焗熟"
+      ],
+      "why": "焗熟 OK。",
+      "note": "少食糖漿。",
+      "sources": "USDA"
+    },
+    {
+      "name": "窩夫雪糕",
+      "en": "Waffle Ice Cream",
+      "icon": "🍦",
+      "status": "safe",
+      "tags": [
+        "甜點"
+      ],
+      "why": "商業雪糕 OK。",
+      "note": "少食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "老火湯",
+      "en": "Slow-Cooked Soup",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "湯水"
+      ],
+      "why": "傳統湯水。",
+      "note": "煲足時間。",
+      "sources": "中醫"
+    },
+    {
+      "name": "番茄薯仔湯",
+      "en": "Tomato Potato Soup",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "茄紅素"
+      ],
+      "why": "番茄抗氧化。",
+      "note": "煲熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "紅蘿蔔粟米湯",
+      "en": "Carrot Corn Soup",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "纖維"
+      ],
+      "why": "清甜溫和。",
+      "note": "煲熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "花生眉豆湯",
+      "en": "Peanut Black Eyed Pea Soup",
+      "icon": "🍲",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "植物蛋白湯水。",
+      "note": "煲熟。",
+      "sources": "USDA"
+    },
+    {
+      "name": "霸王花南北杏",
+      "en": "Pitaya Flower Soup",
+      "icon": "🌸",
+      "status": "safe",
+      "tags": [
+        "潤肺"
+      ],
+      "why": "傳統潤肺。",
+      "note": "煲湯材料。",
+      "sources": "中醫"
+    },
+    {
+      "name": "羅漢果湯",
+      "en": "Monk Fruit Soup",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "潤肺"
+      ],
+      "why": "清潤湯水。",
+      "note": "OK。",
+      "sources": "中醫"
+    },
+    {
+      "name": "川貝雪梨",
+      "en": "Fritillaria Pear",
+      "icon": "🍐",
+      "status": "caution",
+      "tags": [
+        "中藥"
+      ],
+      "why": "川貝是中藥，諮詢醫師。",
+      "note": "自己用雪梨煮糖水 OK。",
+      "sources": "中醫"
+    },
+    {
+      "name": "鴿子湯",
+      "en": "Pigeon Soup",
+      "icon": "🕊",
+      "status": "safe",
+      "tags": [
+        "補身"
+      ],
+      "why": "傳統補品。",
+      "note": "完全煲熟。",
+      "sources": "中醫"
+    },
+    {
+      "name": "鮮榨蘋果汁",
+      "en": "Fresh Apple Juice",
+      "icon": "🧃",
+      "status": "caution",
+      "tags": [
+        "糖份"
+      ],
+      "why": "自家鮮榨 OK 但糖份高。",
+      "note": "少量，整個蘋果更好。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "鮮榨橙汁",
+      "en": "Fresh Orange Juice",
+      "icon": "🧃",
+      "status": "caution",
+      "tags": [
+        "糖份"
+      ],
+      "why": "高維他命C但糖份高。",
+      "note": "少量。",
+      "sources": "ACOG"
+    },
+    {
+      "name": "豆奶（消毒）",
+      "en": "Soy Milk",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "植物蛋白"
+      ],
+      "why": "植物奶。",
+      "note": "揀無糖。",
+      "sources": "USDA"
+    },
+    {
+      "name": "燕麥奶",
+      "en": "Oat Milk",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "植物奶"
+      ],
+      "why": "植物奶選擇。",
+      "note": "無糖版本好。",
+      "sources": "USDA"
+    },
+    {
+      "name": "米奶",
+      "en": "Rice Milk",
+      "icon": "🥛",
+      "status": "caution",
+      "tags": [
+        "砷"
+      ],
+      "why": "可能含砷，少飲。",
+      "note": "唔好做主要飲品。",
+      "sources": "FDA"
+    },
+    {
+      "name": "奶茶（港式）",
+      "en": "HK Milk Tea",
+      "icon": "🥛",
+      "status": "caution",
+      "tags": [
+        "咖啡因"
+      ],
+      "why": "濃茶咖啡因高。",
+      "note": "少飲，計入每日咖啡因。",
+      "sources": "NHS"
+    },
+    {
+      "name": "鴛鴦",
+      "en": "Yuanyang",
+      "icon": "☕",
+      "status": "caution",
+      "tags": [
+        "咖啡因"
+      ],
+      "why": "咖啡 + 奶茶。",
+      "note": "咖啡因高，少飲。",
+      "sources": "NHS"
+    },
+    {
+      "name": "凍檸茶",
+      "en": "Iced Lemon Tea",
+      "icon": "🍋",
+      "status": "caution",
+      "tags": [
+        "咖啡因"
+      ],
+      "why": "茶有咖啡因。",
+      "note": "少飲，自製檸檬水好過。",
+      "sources": "NHS"
+    },
+    {
+      "name": "忌廉（消毒）",
+      "en": "Whipping Cream",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "脂肪"
+      ],
+      "why": "消毒過 OK。",
+      "note": "高脂少食。",
+      "sources": "NHS"
+    },
+    {
+      "name": "牛油",
+      "en": "Butter",
+      "icon": "🟨",
+      "status": "safe",
+      "tags": [
+        "脂肪"
+      ],
+      "why": "商業牛油 OK。",
+      "note": "適量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "植物牛油",
+      "en": "Margarine",
+      "icon": "🟨",
+      "status": "caution",
+      "tags": [
+        "反式脂肪"
+      ],
+      "why": "舊版有反式脂肪。",
+      "note": "揀無反式脂肪版本。",
+      "sources": "WHO"
+    },
+    {
+      "name": "椰子油",
+      "en": "Coconut Oil",
+      "icon": "🥥",
+      "status": "safe",
+      "tags": [
+        "MCT"
+      ],
+      "why": "中鏈脂肪。",
+      "note": "適量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "橄欖油",
+      "en": "Olive Oil",
+      "icon": "🫒",
+      "status": "safe",
+      "tags": [
+        "好脂肪"
+      ],
+      "why": "單元不飽和脂肪。",
+      "note": "沙律或低溫煮食。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芥花籽油",
+      "en": "Canola Oil",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "Omega-3"
+      ],
+      "why": "含 Omega-3。",
+      "note": "日常烹調 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "花生醬（含糖）",
+      "en": "Sugary Peanut Butter",
+      "icon": "🥜",
+      "status": "caution",
+      "tags": [
+        "高糖"
+      ],
+      "why": "商業有糖版。",
+      "note": "揀無糖版本。",
+      "sources": "USDA"
+    },
+    {
+      "name": "果醬",
+      "en": "Jam",
+      "icon": "🍓",
+      "status": "caution",
+      "tags": [
+        "高糖"
+      ],
+      "why": "糖份極高。",
+      "note": "少量。",
+      "sources": "WHO"
+    },
+    {
+      "name": "朱古力醬",
+      "en": "Chocolate Spread",
+      "icon": "🍫",
+      "status": "caution",
+      "tags": [
+        "高糖",
+        "咖啡因"
+      ],
+      "why": "高糖加咖啡因。",
+      "note": "少量。",
+      "sources": "NHS"
+    },
+    {
+      "name": "芝麻醬",
+      "en": "Sesame Paste",
+      "icon": "⚫",
+      "status": "safe",
+      "tags": [
+        "補鈣"
+      ],
+      "why": "高鈣。",
+      "note": "健康塗醬。",
+      "sources": "USDA"
+    },
+    {
+      "name": "沙律醬／千島醬",
+      "en": "Salad Dressing",
+      "icon": "🟠",
+      "status": "caution",
+      "tags": [
+        "蛋黃醬"
+      ],
+      "why": "確認用消毒蛋。",
+      "note": "商業品牌 OK。",
+      "sources": "NHS"
+    },
+    {
+      "name": "番茄醬",
+      "en": "Ketchup",
+      "icon": "🔴",
+      "status": "safe",
+      "tags": [
+        "糖鈉"
+      ],
+      "why": "少量 OK。",
+      "note": "糖鈉高，少用。",
+      "sources": "USDA"
+    },
+    {
+      "name": "芥末（黃／第戎）",
+      "en": "Mustard",
+      "icon": "🟡",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "少量 OK。",
+      "note": "任何種類。",
+      "sources": "USDA"
+    },
+    {
+      "name": "魚露",
+      "en": "Fish Sauce",
+      "icon": "🟫",
+      "status": "caution",
+      "tags": [
+        "高鈉"
+      ],
+      "why": "極高鈉。",
+      "note": "少量調味。",
+      "sources": "WHO"
+    },
+    {
+      "name": "蠔油",
+      "en": "Oyster Sauce",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "商業 OK。",
+      "note": "高鈉少用。",
+      "sources": "USDA"
+    },
+    {
+      "name": "豆瓣醬",
+      "en": "Doubanjiang",
+      "icon": "🔴",
+      "status": "caution",
+      "tags": [
+        "辛辣",
+        "高鈉"
+      ],
+      "why": "高鈉。",
+      "note": "少量。",
+      "sources": "USDA"
+    },
+    {
+      "name": "米醋／白醋",
+      "en": "Rice/White Vinegar",
+      "icon": "🍶",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "基本調味。",
+      "note": "任何用法 OK。",
+      "sources": "USDA"
+    },
+    {
+      "name": "日式醬油（薄鹽）",
+      "en": "Low-Sodium Soy Sauce",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "調味"
+      ],
+      "why": "鈉較低嘅版本。",
+      "note": "日常烹調 OK。",
+      "sources": "USDA"
+    }
+  ],
+  "lactation": [
+    {
+      "name": "燕麥",
+      "en": "Oats",
+      "icon": "🌾",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "纖維"
+      ],
+      "why": "燕麥含 β-葡聚醣，公認最好嘅發奶食物之一。",
+      "note": "每日一碗燕麥粥或燕麥奶。揀無糖原味。",
+      "sources": "La Leche League、香港母乳育嬰協會"
+    },
+    {
+      "name": "豬腳薑",
+      "en": "Pig's Trotter Ginger",
+      "icon": "🐷",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "補血",
+        "傳統"
+      ],
+      "why": "傳統坐月補品，含膠原蛋白、鐵質、薑暖宮。",
+      "note": "產後 1 個月內飲。剖腹產要等傷口愈合先。",
+      "sources": "中醫坐月傳統"
+    },
+    {
+      "name": "木瓜魚湯",
+      "en": "Papaya Fish Soup",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "蛋白質"
+      ],
+      "why": "木瓜+魚（鯽魚、生魚）係經典發奶湯水。",
+      "note": "一定要用全熟木瓜。魚要徹底煮熟。",
+      "sources": "中醫坐月傳統"
+    },
+    {
+      "name": "黑芝麻",
+      "en": "Black Sesame",
+      "icon": "⚫",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "補鈣"
+      ],
+      "why": "高鈣、好脂肪、傳統發奶食物。",
+      "note": "每日 1-2 湯匙。可以打粉加入糊仔或飲品。",
+      "sources": "中醫文獻、USDA"
+    },
+    {
+      "name": "通草",
+      "en": "Tetrapanax",
+      "icon": "🌿",
+      "status": "caution",
+      "tags": [
+        "發奶",
+        "中藥"
+      ],
+      "why": "傳統中醫發奶藥材。",
+      "note": "⚠️ 中藥，最好先諮詢中醫師。份量過多可能利尿過度。",
+      "sources": "中醫藥典"
+    },
+    {
+      "name": "魚湯",
+      "en": "Fish Soup",
+      "icon": "🥣",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "蛋白質"
+      ],
+      "why": "優質蛋白，傳統發奶。",
+      "note": "徹底煮熟，去鱗去腮。",
+      "sources": "中醫坐月傳統"
+    },
+    {
+      "name": "多飲水",
+      "en": "Hydration",
+      "icon": "💧",
+      "status": "safe",
+      "tags": [
+        "發奶",
+        "基本"
+      ],
+      "why": "母乳 87% 係水，水份不足直接影響奶量。",
+      "note": "每日 2.5-3 升水。每次餵奶前飲一杯。",
+      "sources": "香港衞生署"
+    },
+    {
+      "name": "薄荷",
+      "en": "Peppermint",
+      "icon": "🌱",
+      "status": "avoid",
+      "tags": [
+        "回奶"
+      ],
+      "why": "會抑制乳汁分泌，仍喺哺乳階段要避免。",
+      "note": "避免薄荷茶、薄荷糖、薄荷藥油喺胸部。",
+      "sources": "La Leche League"
+    },
+    {
+      "name": "麥芽",
+      "en": "Malt",
+      "icon": "🍺",
+      "status": "avoid",
+      "tags": [
+        "回奶"
+      ],
+      "why": "傳統用嚟回奶，哺乳期要避免。",
+      "note": "想斷奶先食。",
+      "sources": "中醫藥典"
+    },
+    {
+      "name": "人參",
+      "en": "Ginseng",
+      "icon": "🌿",
+      "status": "avoid",
+      "tags": [
+        "回奶",
+        "中藥"
+      ],
+      "why": "有研究顯示可能減少乳汁分泌。",
+      "note": "哺乳期避免。坐月後諮詢中醫。",
+      "sources": "中醫文獻"
+    },
+    {
+      "name": "咖啡",
+      "en": "Coffee",
+      "icon": "☕",
+      "status": "caution",
+      "tags": [
+        "咖啡因"
+      ],
+      "why": "咖啡因會經母乳到 BB，可能令 BB 煩躁失眠。",
+      "note": "每日最多 1-2 杯（200-300mg）。最好喺餵奶後飲。",
+      "sources": "CDC、AAP"
+    },
+    {
+      "name": "辛辣食物",
+      "en": "Spicy Food",
+      "icon": "🌶",
+      "status": "caution",
+      "tags": [
+        "影響BB"
+      ],
+      "why": "可能令 BB 腸胃不適、肚風。",
+      "note": "如果 BB 食完母乳後易嘔/哭鬧，試下停辛辣 2-3 日。",
+      "sources": "La Leche League"
+    },
+    {
+      "name": "酒精",
+      "en": "Alcohol",
+      "icon": "🍷",
+      "status": "avoid",
+      "tags": [
+        "影響BB"
+      ],
+      "why": "酒精直接到母乳，影響 BB 大腦發育。",
+      "note": "完全戒酒。如飲咗，飲後 2 小時內唔好餵奶。",
+      "sources": "AAP、WHO"
+    },
+    {
+      "name": "高汞海鮮",
+      "en": "High-Mercury Fish",
+      "icon": "🦈",
+      "status": "avoid",
+      "tags": [
+        "影響BB"
+      ],
+      "why": "水銀經母乳影響 BB 神經發育。",
+      "note": "避免：鯊魚、劍魚、馬頭魚、大眼吞拿魚。",
+      "sources": "FDA"
+    }
+  ],
+  "bb6": [
+    {
+      "name": "高鐵嬰兒米糊",
+      "en": "Iron-Fortified Rice Cereal",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "第一口",
+        "補鐵"
+      ],
+      "why": "BB 6 個月後最常見嘅第一口食物。",
+      "note": "用母乳/配方奶開稀。⚠️ 唔可以用鮮奶開。",
+      "sources": "WHO、香港衞生署"
+    },
+    {
+      "name": "牛油果蓉",
+      "en": "Avocado Puree",
+      "icon": "🥑",
+      "status": "safe",
+      "tags": [
+        "好脂肪",
+        "腦發育"
+      ],
+      "why": "健康脂肪，幫助腦部發育。",
+      "note": "熟牛油果壓蓉。可加少少母乳開稀。",
+      "sources": "AAP"
+    },
+    {
+      "name": "番薯蓉",
+      "en": "Sweet Potato",
+      "icon": "🍠",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "纖維"
+      ],
+      "why": "甜味受歡迎，富維他命 A。",
+      "note": "蒸到完全軟，去皮壓蓉。",
+      "sources": "WHO"
+    },
+    {
+      "name": "南瓜蓉",
+      "en": "Pumpkin",
+      "icon": "🎃",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "溫和"
+      ],
+      "why": "溫和易消化。",
+      "note": "蒸熟壓蓉。",
+      "sources": "AAP"
+    },
+    {
+      "name": "蘋果蓉",
+      "en": "Apple Puree",
+      "icon": "🍎",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "低敏"
+      ],
+      "why": "低敏溫和。",
+      "note": "去皮去核蒸軟壓蓉。",
+      "sources": "AAP"
+    },
+    {
+      "name": "梨蓉",
+      "en": "Pear Puree",
+      "icon": "🍐",
+      "status": "safe",
+      "tags": [
+        "纖維",
+        "潤腸"
+      ],
+      "why": "低敏，幫助便秘。",
+      "note": "去皮去核蒸熟。",
+      "sources": "AAP"
+    },
+    {
+      "name": "香蕉蓉",
+      "en": "Banana",
+      "icon": "🍌",
+      "status": "safe",
+      "tags": [
+        "鉀",
+        "快速"
+      ],
+      "why": "即食方便。",
+      "note": "揀完全熟（有黑點）。",
+      "sources": "WHO"
+    },
+    {
+      "name": "紅蘿蔔蓉",
+      "en": "Carrot Puree",
+      "icon": "🥕",
+      "status": "safe",
+      "tags": [
+        "維他命A",
+        "甜味"
+      ],
+      "why": "天然甜味。",
+      "note": "揀超市嘅，避免自種有硝酸鹽。",
+      "sources": "AAP"
+    },
+    {
+      "name": "西蘭花蓉",
+      "en": "Broccoli Puree",
+      "icon": "🥦",
+      "status": "safe",
+      "tags": [
+        "葉酸",
+        "維他命C"
+      ],
+      "why": "高營養綠葉菜。",
+      "note": "蒸軟壓蓉。可能令 BB 放屁多啲，正常。",
+      "sources": "AAP"
+    },
+    {
+      "name": "雞肉蓉（7m+）",
+      "en": "Chicken Puree",
+      "icon": "🍗",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "補鐵"
+      ],
+      "why": "7-8 個月開始引入肉類。",
+      "note": "雞胸徹底煮熟，攪拌機打蓉。",
+      "sources": "AAP"
+    },
+    {
+      "name": "雞蛋黃（全熟）",
+      "en": "Cooked Egg Yolk",
+      "icon": "🥚",
+      "status": "caution",
+      "tags": [
+        "過敏原",
+        "慢慢試"
+      ],
+      "why": "高敏食物，AAP 建議 6 個月後可試。",
+      "note": "⚠️ 一次 ¼ 茶匙，觀察 3-5 日。完全煮熟。",
+      "sources": "AAP 2019"
+    },
+    {
+      "name": "花生醬（薄）",
+      "en": "Thin Peanut Butter",
+      "icon": "🥜",
+      "status": "caution",
+      "tags": [
+        "過敏原"
+      ],
+      "why": "LEAP 研究：早引入降低過敏風險。",
+      "note": "⚠️ 必須開稀。家族有過敏史先諮詢醫生。",
+      "sources": "LEAP 2015"
+    },
+    {
+      "name": "三文魚蓉",
+      "en": "Salmon Puree",
+      "icon": "🐟",
+      "status": "caution",
+      "tags": [
+        "過敏原",
+        "補DHA"
+      ],
+      "why": "DHA 好但屬過敏原。",
+      "note": "完全煮熟壓蓉，第一次半茶匙。",
+      "sources": "AAP"
+    },
+    {
+      "name": "蜂蜜",
+      "en": "Honey",
+      "icon": "🍯",
+      "status": "avoid",
+      "tags": [
+        "危險",
+        "肉毒桿菌"
+      ],
+      "why": "⚠️ 1 歲前絕對唔可以！肉毒桿菌可致命。",
+      "note": "完全唔可以，包括煮過嘅。",
+      "sources": "CDC、香港衞生署"
+    },
+    {
+      "name": "鹽",
+      "en": "Salt",
+      "icon": "🧂",
+      "status": "avoid",
+      "tags": [
+        "危險"
+      ],
+      "why": "BB 腎臟未成熟，多鹽傷腎。",
+      "note": "1 歲前完全唔加鹽。",
+      "sources": "NHS"
+    },
+    {
+      "name": "糖",
+      "en": "Sugar",
+      "icon": "🍬",
+      "status": "avoid",
+      "tags": [
+        "唔好習慣"
+      ],
+      "why": "令 BB 鍾意甜味、壞牙、痴肥風險。",
+      "note": "1 歲前唔加糖。",
+      "sources": "WHO"
+    },
+    {
+      "name": "鮮牛奶（飲）",
+      "en": "Cow's Milk",
+      "icon": "🥛",
+      "status": "avoid",
+      "tags": [
+        "危險"
+      ],
+      "why": "1 歲前唔可以當主飲料。",
+      "note": "少量入食譜煮食 OK。",
+      "sources": "AAP"
+    },
+    {
+      "name": "果汁",
+      "en": "Fruit Juice",
+      "icon": "🧃",
+      "status": "avoid",
+      "tags": [
+        "唔需要"
+      ],
+      "why": "糖份高，AAP 唔建議。",
+      "note": "直接食果蓉好過。",
+      "sources": "AAP 2017"
+    },
+    {
+      "name": "整粒堅果",
+      "en": "Whole Nuts",
+      "icon": "🌰",
+      "status": "avoid",
+      "tags": [
+        "窒息"
+      ],
+      "why": "4 歲前都係窒息高風險。",
+      "note": "花生醬可，整粒絕對唔可以。",
+      "sources": "AAP"
+    },
+    {
+      "name": "整粒葡萄",
+      "en": "Whole Grapes",
+      "icon": "🍇",
+      "status": "avoid",
+      "tags": [
+        "窒息"
+      ],
+      "why": "形狀塞氣管，窒息頭號食物。",
+      "note": "一定要切細粒（縱切 ¼）。",
+      "sources": "AAP"
+    },
+    {
+      "name": "熱狗腸",
+      "en": "Hot Dogs",
+      "icon": "🌭",
+      "status": "avoid",
+      "tags": [
+        "窒息",
+        "加工肉"
+      ],
+      "why": "形狀塞氣管 + 高鈉。",
+      "note": "完全避免。",
+      "sources": "AAP"
+    },
+    {
+      "name": "爆谷",
+      "en": "Popcorn",
+      "icon": "🍿",
+      "status": "avoid",
+      "tags": [
+        "窒息"
+      ],
+      "why": "4 歲前窒息風險。",
+      "note": "完全避免。",
+      "sources": "AAP"
+    }
+  ],
+  "bb9": [
+    {
+      "name": "雞蛋全蛋（全熟）",
+      "en": "Whole Egg",
+      "icon": "🥚",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "膽鹼"
+      ],
+      "why": "8 個月後可以食全蛋。",
+      "note": "完全煮熟，炒蛋、蒸蛋、煮蛋切粒。",
+      "sources": "AAP"
+    },
+    {
+      "name": "牛肉碎",
+      "en": "Ground Beef",
+      "icon": "🥩",
+      "status": "safe",
+      "tags": [
+        "補鐵",
+        "蛋白質"
+      ],
+      "why": "紅肉鐵質好吸收。",
+      "note": "徹底煮熟煮散。",
+      "sources": "AAP"
+    },
+    {
+      "name": "豬肉碎",
+      "en": "Ground Pork",
+      "icon": "🐷",
+      "status": "safe",
+      "tags": [
+        "蛋白質"
+      ],
+      "why": "優質蛋白。",
+      "note": "完全煮熟煮散。",
+      "sources": "AAP"
+    },
+    {
+      "name": "白肉魚",
+      "en": "White Fish",
+      "icon": "🐟",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "低汞"
+      ],
+      "why": "低敏低汞。",
+      "note": "揀龍躉、鱈魚、比目魚。完全煮熟去骨。",
+      "sources": "FDA"
+    },
+    {
+      "name": "豆腐",
+      "en": "Tofu",
+      "icon": "🟫",
+      "status": "safe",
+      "tags": [
+        "植物蛋白",
+        "鈣"
+      ],
+      "why": "植物蛋白，質地軟。",
+      "note": "切細粒。揀嫩豆腐。",
+      "sources": "香港衞生署"
+    },
+    {
+      "name": "芝士（消毒）",
+      "en": "Pasteurized Cheese",
+      "icon": "🧀",
+      "status": "safe",
+      "tags": [
+        "鈣"
+      ],
+      "why": "高鈣易接受。",
+      "note": "揀無鹽低鹽嬰兒芝士，切細粒。",
+      "sources": "AAP"
+    },
+    {
+      "name": "原味乳酪",
+      "en": "Plain Yogurt",
+      "icon": "🥛",
+      "status": "safe",
+      "tags": [
+        "鈣",
+        "益生菌"
+      ],
+      "why": "乳酪 OK（不同鮮奶飲用）。",
+      "note": "揀全脂無糖。",
+      "sources": "AAP"
+    },
+    {
+      "name": "軟糙米飯",
+      "en": "Soft Brown Rice",
+      "icon": "🍚",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "纖維"
+      ],
+      "why": "比白米營養。",
+      "note": "煮到完全軟。",
+      "sources": "WHO"
+    },
+    {
+      "name": "通粉/意粉",
+      "en": "Pasta",
+      "icon": "🍝",
+      "status": "safe",
+      "tags": [
+        "碳水",
+        "finger food"
+      ],
+      "why": "BB 可手抓。",
+      "note": "煮軟切短。",
+      "sources": "AAP"
+    },
+    {
+      "name": "蒸蛋羹",
+      "en": "Steamed Egg",
+      "icon": "🍮",
+      "status": "safe",
+      "tags": [
+        "蛋白質",
+        "滑"
+      ],
+      "why": "質地滑易吞。",
+      "note": "⚠️ 確認已過蛋黃過敏測試。",
+      "sources": "AAP"
+    },
+    {
+      "name": "番茄（去皮去籽）",
+      "en": "Tomato",
+      "icon": "🍅",
+      "status": "safe",
+      "tags": [
+        "維他命C"
+      ],
+      "why": "茄紅素抗氧化。",
+      "note": "去皮去籽切細粒，煮熟最好。",
+      "sources": "AAP"
+    },
+    {
+      "name": "士多啤梨",
+      "en": "Strawberry",
+      "icon": "🍓",
+      "status": "caution",
+      "tags": [
+        "過敏原"
+      ],
+      "why": "常見過敏原。",
+      "note": "徹底洗淨切細粒，一次少量。",
+      "sources": "AAP 2019"
+    },
+    {
+      "name": "柑橘類",
+      "en": "Citrus",
+      "icon": "🍊",
+      "status": "caution",
+      "tags": [
+        "口腔過敏"
+      ],
+      "why": "酸性可能刺激皮膚。",
+      "note": "留意口部周圍出疹。",
+      "sources": "AAP"
+    },
+    {
+      "name": "小麥/麵包",
+      "en": "Wheat/Bread",
+      "icon": "🍞",
+      "status": "safe",
+      "tags": [
+        "過敏原"
+      ],
+      "why": "常見過敏原但屬基本糧食。",
+      "note": "揀無糖無鹽嬰兒麵包。",
+      "sources": "AAP"
+    },
+    {
+      "name": "蜂蜜",
+      "en": "Honey",
+      "icon": "🍯",
+      "status": "avoid",
+      "tags": [
+        "危險"
+      ],
+      "why": "⚠️ 1 歲前絕對唔可以！",
+      "note": "12 個月生日後先可以。",
+      "sources": "CDC"
+    },
+    {
+      "name": "鹽",
+      "en": "Salt",
+      "icon": "🧂",
+      "status": "avoid",
+      "tags": [
+        "限制"
+      ],
+      "why": "1 歲前每日 < 1g。",
+      "note": "盡量唔加。",
+      "sources": "NHS"
+    },
+    {
+      "name": "整粒堅果",
+      "en": "Whole Nuts",
+      "icon": "🌰",
+      "status": "avoid",
+      "tags": [
+        "窒息"
+      ],
+      "why": "4 歲前窒息風險。",
+      "note": "完全避免。",
+      "sources": "AAP"
+    },
+    {
+      "name": "整粒葡萄",
+      "en": "Whole Grapes",
+      "icon": "🍇",
+      "status": "avoid",
+      "tags": [
+        "窒息"
+      ],
+      "why": "窒息頭號。",
+      "note": "切細粒（縱切¼）。",
+      "sources": "AAP"
+    }
+  ]
+}
