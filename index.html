@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Gravy · 寶寶汁</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #f6f0e4;
+  --warm-white: #faf6ed;
+  --sage: #8a9a7b;
+  --terracotta: #c97b5e;
+  --plum: #6b3947;
+  --gold: #c9a558;
+  --ink: #2a2620;
+  --muted: #6b6358;
+  --border: rgba(42, 38, 32, 0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: 'Noto Serif TC', serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.app { max-width: 480px; margin: 0 auto; min-height: 100vh; background: var(--warm-white); position: relative; }
+
+/* DISCLAIMER */
+.modal-bg { position: fixed; inset: 0; background: rgba(42,38,32,0.85); backdrop-filter: blur(8px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.modal-bg.hidden { display: none; }
+.modal { background: var(--warm-white); border-radius: 20px; padding: 28px 24px; max-width: 420px; width: 100%; max-height: 90vh; overflow-y: auto; }
+.modal h2 { font-size: 20px; color: var(--plum); margin-bottom: 14px; }
+.modal p { font-size: 13.5px; color: var(--muted); margin-bottom: 12px; }
+.modal .warn { background: rgba(201,123,94,0.08); padding: 14px; border-radius: 10px; border-left: 3px solid var(--terracotta); margin: 14px 0; }
+.modal .warn p { color: var(--ink); font-size: 13px; margin: 0; }
+.modal label { display: flex; align-items: flex-start; gap: 10px; margin: 16px 0; cursor: pointer; padding: 12px; background: rgba(201,165,88,0.1); border-radius: 10px; }
+.modal label input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--terracotta); }
+.modal label span { font-size: 13px; font-weight: 600; }
+.btn-primary { width: 100%; padding: 14px; background: var(--terracotta); color: white; border: none; border-radius: 12px; font-family: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
+.btn-primary:disabled { background: #ccc; cursor: not-allowed; }
+
+/* HEADER */
+.header { padding: 28px 24px 16px; background: linear-gradient(180deg, rgba(201,123,94,0.06), transparent); }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo-placeholder {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #faf6ed 0%, #f0e6d2 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-shadow: 0 4px 14px rgba(201,123,94,0.18);
+  border: 1px solid rgba(201,123,94,0.15);
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+.logo-placeholder:hover { transform: rotate(-3deg) scale(1.05); }
+.logo-placeholder svg { width: 100%; height: 100%; }
+.logo-placeholder::before {
+  content: 'LOGO';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--gold);
+  color: white;
+  font-size: 8px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.85;
+}
+
+.brand-text { display: flex; flex-direction: column; gap: 2px; }
+.brand-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--plum);
+  letter-spacing: 0.3px;
+  line-height: 1;
+}
+.brand-tag {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+.icon-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(201,123,94,0.1); border: none; cursor: pointer; font-size: 16px; }
+.greeting { font-size: 11px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; }
+.title { font-size: 24px; font-weight: 700; margin-top: 4px; }
+.badge { display: inline-block; background: var(--sage); color: white; padding: 5px 12px; border-radius: 16px; font-size: 11px; margin-top: 10px; }
+
+/* STAGE SWITCHER */
+.stage-switcher { background: var(--warm-white); padding: 8px 12px 12px; border-bottom: 1px solid var(--border); }
+.stage-scroll { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; }
+.stage-scroll::-webkit-scrollbar { display: none; }
+.stage-btn {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 14px;
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  min-width: 78px;
+  transition: 0.2s;
+  position: relative;
+}
+.stage-btn:active { transform: scale(0.96); }
+.stage-icon { font-size: 22px; }
+.stage-label { font-size: 12px; font-weight: 700; color: var(--ink); letter-spacing: 0.3px; }
+.stage-sub { font-size: 9px; color: var(--muted); margin-top: -2px; }
+.stage-btn.active {
+  border-color: var(--terracotta);
+  background: var(--terracotta);
+  box-shadow: 0 4px 12px rgba(201,123,94,0.25);
+}
+.stage-btn.active .stage-label,
+.stage-btn.active .stage-sub { color: white; }
+
+/* Stage-themed accent (data-stage on body) */
+body[data-current-stage="lactation"] { --accent: #c9a558; }
+body[data-current-stage="bb6"] { --accent: #8a9a7b; }
+body[data-current-stage="bb9"] { --accent: #7a9ab8; }
+body[data-current-stage="pregnancy"] { --accent: #c97b5e; }
+
+/* TABS */
+.tabs { display: flex; background: var(--warm-white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; }
+.tab { flex: 1; padding: 14px 4px; background: none; border: none; font-family: inherit; font-size: 13px; color: var(--muted); cursor: pointer; position: relative; }
+.tab.active { color: var(--terracotta); font-weight: 700; }
+.tab.active::after { content: ''; position: absolute; bottom: -1px; left: 20%; right: 20%; height: 2px; background: var(--terracotta); }
+
+/* CONTENT */
+.content { padding: 18px 20px 100px; }
+.page { display: none; }
+.page.active { display: block; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; color: var(--plum); margin-bottom: 14px; }
+
+/* SEARCH */
+.search { width: 100%; padding: 13px 16px; background: white; border: 1px solid var(--border); border-radius: 12px; font-family: inherit; font-size: 14px; outline: none; margin-bottom: 14px; }
+.search:focus { border-color: var(--terracotta); }
+
+.filters { display: flex; gap: 8px; margin-bottom: 14px; overflow-x: auto; padding-bottom: 4px; }
+.filters::-webkit-scrollbar { display: none; }
+.chip { padding: 6px 13px; background: white; border: 1px solid var(--border); border-radius: 18px; font-family: inherit; font-size: 12px; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.chip.active { background: var(--ink); color: var(--warm-white); border-color: var(--ink); }
+
+.food-card { background: white; border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; margin-bottom: 8px; border: 1px solid transparent; transition: 0.2s; position: relative; }
+.food-card:hover { border-color: rgba(201,123,94,0.2); }
+.food-card.safe { border-left: 4px solid var(--sage); }
+.food-card.caution { border-left: 4px solid var(--gold); }
+.food-card.avoid { border-left: 4px solid var(--terracotta); }
+.food-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.food-icon.safe { background: rgba(138,154,123,0.15); }
+.food-icon.caution { background: rgba(201,165,88,0.15); }
+.food-icon.avoid { background: rgba(201,123,94,0.15); }
+.food-name { font-weight: 600; font-size: 14.5px; }
+.food-tag { font-size: 11.5px; color: var(--muted); }
+.food-info { flex: 1; min-width: 0; }
+
+/* BIG YES/LITTLE/NO badges */
+.status-badge {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  min-width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  flex-shrink: 0;
+  font-family: 'Inter', 'Noto Serif TC', sans-serif;
+}
+.status-badge small {
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.85;
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+.status-badge.safe { background: var(--sage); color: white; }
+.status-badge.caution { background: var(--gold); color: white; }
+.status-badge.avoid { background: var(--terracotta); color: white; }
+
+/* DETAIL */
+.detail-modal { position: fixed; inset: 0; background: rgba(42,38,32,0.5); backdrop-filter: blur(4px); z-index: 200; display: none; align-items: flex-end; }
+.detail-modal.show { display: flex; }
+.detail-box { background: var(--warm-white); width: 100%; max-width: 480px; margin: 0 auto; border-radius: 20px 20px 0 0; padding: 24px; max-height: 80vh; overflow-y: auto; }
+.detail-header { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; }
+.detail-icon { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+.detail-title { font-size: 20px; font-weight: 700; }
+.detail-status { font-size: 12px; margin-top: 3px; font-weight: 600; }
+.detail-status.safe { color: var(--sage); }
+.detail-status.caution { color: var(--gold); }
+.detail-status.avoid { color: var(--terracotta); }
+.detail-section { margin-bottom: 16px; }
+.detail-section h4 { font-size: 13px; color: var(--plum); margin-bottom: 6px; font-weight: 600; }
+.detail-section p { font-size: 13.5px; color: var(--ink); line-height: 1.65; }
+.detail-section .source { font-size: 11px; color: var(--muted); font-style: italic; margin-top: 6px; }
+.close-btn { position: absolute; top: 16px; right: 20px; width: 32px; height: 32px; border-radius: 50%; background: rgba(0,0,0,0.05); border: none; cursor: pointer; font-size: 16px; }
+
+/* RECIPES */
+.recipe-card { background: white; border-radius: 14px; padding: 16px; margin-bottom: 10px; cursor: pointer; border: 1px solid transparent; transition: 0.2s; }
+.recipe-card:hover { border-color: rgba(201,123,94,0.2); }
+.recipe-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.recipe-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 11.5px; color: var(--muted); margin-bottom: 8px; }
+.recipe-meta span { background: var(--cream); padding: 3px 9px; border-radius: 10px; }
+
+/* Prominent meal type + feature badges */
+.recipe-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.meal-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+/* Meal type colors */
+.meal-badge.早餐 { background: #fff4d6; color: #b87b1a; border: 1px solid #f0c869; }
+.meal-badge.午餐 { background: #d8e8d3; color: #4d6e3a; border: 1px solid #97b78a; }
+.meal-badge.晚餐 { background: #d4dff0; color: #3d5a7d; border: 1px solid #8aa5c8; }
+.meal-badge.小食 { background: #ffe0d6; color: #b85a3a; border: 1px solid #e89a7a; }
+.meal-badge.湯水 { background: #f5d6e8; color: #8a3a6e; border: 1px solid #d499b8; }
+
+/* Feature badges (highlight special qualities) */
+.feature-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+}
+.feature-badge.省時 { background: #ffd4d4; color: #c93030; border: 1px solid #f08080; }
+.feature-badge.高蛋白 { background: #e8d6ff; color: #6a3aa8; border: 1px solid #b896e0; }
+.feature-badge.健身 { background: #d6f0e8; color: #2a8a6e; border: 1px solid #80c8a8; }
+.feature-badge.止孕吐 { background: #fff0d6; color: #a8762a; border: 1px solid #e0b870; }
+.feature-badge.補鐵 { background: #ffd6d6; color: #a83030; border: 1px solid #e08080; }
+.feature-badge.補DHA { background: #d6e8ff; color: #2a5aa8; border: 1px solid #80a8e0; }
+.feature-badge.補葉酸 { background: #d8f0d4; color: #3a8a4a; border: 1px solid #88c098; }
+.feature-badge.補鈣 { background: #f0e8d6; color: #8a6a2a; border: 1px solid #c8b080; }
+.feature-badge.補血 { background: #f0d6dc; color: #8a3a4a; border: 1px solid #c898a8; }
+.feature-badge.湯水 { background: #f5d6e8; color: #8a3a6e; border: 1px solid #d499b8; }
+.feature-badge.溫和 { background: #f5e8d6; color: #8a6a2a; border: 1px solid #d4b890; }
+.feature-badge.消水腫 { background: #d6f0f0; color: #2a7a8a; border: 1px solid #80c0d0; }
+.feature-badge.纖維 { background: #e8f0d6; color: #5a7a2a; border: 1px solid #b0c880; }
+
+.recipe-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.recipe-tag { background: rgba(138,154,123,0.15); color: var(--sage); font-size: 11px; padding: 3px 9px; border-radius: 8px; font-weight: 600; }
+
+.recipe-detail h3 { font-size: 13px; color: var(--plum); margin: 14px 0 6px; }
+.recipe-detail ul, .recipe-detail ol { padding-left: 20px; }
+.recipe-detail li { font-size: 13.5px; margin-bottom: 4px; line-height: 1.6; }
+.nutri-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 10px; }
+.nutri-item { background: var(--cream); padding: 10px; border-radius: 10px; text-align: center; }
+.nutri-label { font-size: 10.5px; color: var(--muted); margin-bottom: 2px; }
+.nutri-value { font-weight: 700; font-size: 14px; color: var(--plum); }
+
+/* MEAL PLAN */
+.gen-btn { width: 100%; padding: 14px; background: var(--plum); color: white; border: none; border-radius: 12px; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; margin-bottom: 14px; }
+.meal-block { background: white; border-radius: 12px; padding: 14px; margin-bottom: 10px; border: 1px solid transparent; transition: 0.2s; }
+.meal-block:hover { border-color: rgba(201,123,94,0.3); transform: translateX(3px); box-shadow: 0 4px 12px rgba(42,38,32,0.06); }
+.meal-block:active { transform: scale(0.98); }
+
+.num-btn { width: 36px; height: 36px; border-radius: 50%; background: var(--cream); border: 1px solid var(--border); font-size: 18px; font-weight: 700; cursor: pointer; color: var(--terracotta); }
+.num-btn:hover { background: var(--terracotta); color: white; }
+.num-btn:active { transform: scale(0.9); }
+
+.shop-category { background: white; border-radius: 12px; padding: 14px; margin-bottom: 10px; }
+.shop-cat-title { font-size: 14px; font-weight: 700; color: var(--plum); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.shop-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.shop-item:last-child { border-bottom: none; }
+.shop-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--sage); cursor: pointer; }
+.shop-item-name { flex: 1; font-size: 14px; }
+.shop-item-name.checked { text-decoration: line-through; color: var(--muted); }
+.shop-item-qty { font-size: 13px; color: var(--terracotta); font-weight: 600; }
+
+.shop-action-bar { display: flex; gap: 8px; margin-bottom: 14px; }
+.shop-action-bar button { flex: 1; padding: 10px; background: white; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 13px; cursor: pointer; }
+.shop-action-bar button:hover { background: var(--cream); }
+
+/* ALLERGY TRACKER */
+.allergy-rules { background: linear-gradient(135deg, rgba(201,165,88,0.12), rgba(201,123,94,0.08)); border-radius: 14px; padding: 14px; margin-bottom: 14px; border: 1px solid rgba(201,123,94,0.15); }
+.rule-title { font-size: 13px; font-weight: 700; color: var(--plum); margin-bottom: 8px; }
+.rule-list { padding-left: 22px; }
+.rule-list li { font-size: 13px; margin-bottom: 4px; color: var(--ink); }
+.allergy-card { background: white; border-radius: 12px; padding: 14px; margin-bottom: 10px; border-left: 4px solid var(--sage); }
+.allergy-card.reaction-輕微 { border-left-color: var(--gold); background: rgba(201,165,88,0.05); }
+.allergy-card.reaction-嚴重 { border-left-color: #c93030; background: rgba(201,30,30,0.05); }
+.allergy-date { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.allergy-food { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.allergy-meta { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.allergy-reaction-badge { display: inline-block; padding: 4px 10px; border-radius: 8px; font-size: 11px; font-weight: 700; margin-right: 6px; }
+.allergy-reaction-badge.無事 { background: rgba(138,154,123,0.2); color: var(--sage-dark, #5d6e51); }
+.allergy-reaction-badge.輕微 { background: rgba(201,165,88,0.2); color: #8a6a2a; }
+.allergy-reaction-badge.嚴重 { background: rgba(201,30,30,0.15); color: #c93030; }
+.allergy-symptoms { font-size: 12px; color: var(--ink); margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border); }
+.allergy-note { font-size: 12px; color: var(--muted); margin-top: 4px; font-style: italic; }
+.allergy-delete { float: right; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 18px; padding: 0 4px; }
+.meal-time { font-size: 11px; color: var(--terracotta); font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; text-transform: uppercase; }
+.meal-name { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.meal-cal { font-size: 12px; color: var(--muted); }
+.total-nutri { background: var(--plum); color: white; border-radius: 12px; padding: 14px; margin-top: 14px; }
+.total-nutri h4 { font-size: 12px; opacity: 0.8; margin-bottom: 8px; letter-spacing: 1px; }
+.total-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.total-item { text-align: center; }
+.total-val { font-size: 16px; font-weight: 700; }
+.total-lab { font-size: 10px; opacity: 0.8; }
+
+/* SETTINGS */
+.setting-group { background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.setting-label { font-size: 13px; color: var(--muted); margin-bottom: 8px; font-weight: 600; }
+.opt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.opt-grid.three { grid-template-columns: repeat(3, 1fr); }
+.opt-btn { padding: 10px; background: var(--cream); border: 1.5px solid transparent; border-radius: 10px; font-family: inherit; font-size: 13px; cursor: pointer; transition: 0.2s; }
+.opt-btn.active { background: var(--terracotta); color: white; border-color: var(--terracotta); }
+.checkbox-list { display: flex; flex-direction: column; gap: 8px; }
+.checkbox-list label { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 8px; border-radius: 8px; }
+.checkbox-list label:hover { background: var(--cream); }
+.checkbox-list input { width: 16px; height: 16px; accent-color: var(--terracotta); }
+
+/* Big toggle buttons for multi-select */
+.toggle-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.toggle-grid.three { grid-template-columns: repeat(3, 1fr); }
+.toggle-grid.one { grid-template-columns: 1fr; }
+.toggle-btn { 
+  padding: 14px 12px; 
+  background: white; 
+  border: 2px solid var(--border); 
+  border-radius: 12px; 
+  font-family: inherit; 
+  font-size: 14px; 
+  cursor: pointer; 
+  transition: 0.15s; 
+  color: var(--ink); 
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+}
+.toggle-btn:hover { background: var(--cream); border-color: rgba(201,123,94,0.3); }
+.toggle-btn:active { transform: scale(0.97); }
+.toggle-btn.active { 
+  background: var(--terracotta); 
+  color: white; 
+  border-color: var(--terracotta); 
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(201,123,94,0.25);
+}
+.toggle-btn.active::after {
+  content: '✓';
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+.toggle-btn small { display: block; font-size: 11px; opacity: 0.75; margin-top: 2px; font-weight: 400; }
+.multi-hint { font-weight: 400; color: var(--muted); font-size: 11px; }
+.disclaimer-banner { background: rgba(201,123,94,0.08); border-radius: 10px; padding: 12px; font-size: 12px; color: var(--muted); margin-bottom: 14px; border-left: 3px solid var(--terracotta); }
+
+/* EMPTY */
+.empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
+.empty-icon { font-size: 40px; margin-bottom: 10px; opacity: 0.4; }
+
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.page.active { animation: slideUp 0.3s ease; }
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- DISCLAIMER MODAL -->
+<div class="modal-bg" id="disclaimerModal">
+  <div class="modal">
+    <h2>⚠️ 重要聲明</h2>
+    <p>呢個 app 嘅資料只供<strong>參考</strong>，唔可以代替醫生、註冊營養師、兒科醫生或中醫師嘅專業建議。</p>
+    <div class="warn">
+      <p><strong>🤰 孕婦：</strong>任何飲食疑問請諮詢產科醫生或註冊營養師。</p>
+      <p style="margin-top:8px;"><strong>👶 BB：</strong>BB 食物關乎生命安全（窒息、過敏、肉毒桿菌），第一次引入任何新食物前請諮詢兒科醫生。如出現呼吸困難、面腫等嚴重反應 — <strong>即時撥 999</strong>。</p>
+    </div>
+    <p><strong>資料來源：</strong>香港衞生署、食物安全中心、ACOG、AAP、WHO、NHS、USDA、CDC、LEAP 研究。</p>
+    <p>每個人情況唔同（過敏、健康狀況），呢個 app 嘅通用建議未必啱晒你。</p>
+    <label>
+      <input type="checkbox" id="agreeCheck">
+      <span>我明白資料只供參考，唔代替醫生建議。任何疑問會諮詢專業人士。</span>
+    </label>
+    <button class="btn-primary" id="agreeBtn" disabled>我明白，繼續</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-top">
+    <div class="brand">
+      <div class="logo-placeholder" id="logoPlaceholder">
+        <!-- Placeholder logo: bowl with cute face. Replace this SVG with real logo later -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="Baby Gravy logo">
+          <!-- Bowl -->
+          <path d="M 8 30 Q 8 50 32 54 Q 56 50 56 30 Z" fill="#c97b5e"/>
+          <!-- Bowl rim -->
+          <ellipse cx="32" cy="30" rx="24" ry="5" fill="#a85a3e"/>
+          <!-- Steam -->
+          <path d="M 22 22 Q 20 16 24 12 Q 28 8 24 4" stroke="#8a9a7b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <path d="M 32 20 Q 30 14 34 10 Q 38 6 34 2" stroke="#8a9a7b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path d="M 42 22 Q 40 16 44 12 Q 48 8 44 4" stroke="#8a9a7b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <!-- BB face on bowl -->
+          <circle cx="26" cy="38" r="1.5" fill="#faf6ed"/>
+          <circle cx="38" cy="38" r="1.5" fill="#faf6ed"/>
+          <path d="M 28 44 Q 32 47 36 44" stroke="#faf6ed" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <!-- Cheeks -->
+          <circle cx="22" cy="42" r="2" fill="#a85a3e" opacity="0.6"/>
+          <circle cx="42" cy="42" r="2" fill="#a85a3e" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">Baby Gravy</div>
+        <div class="brand-tag">寶寶汁 · 孕媽食譜</div>
+      </div>
+    </div>
+    <button class="icon-btn" onclick="switchTab('settings')">⚙</button>
+  </div>
+  <div class="greeting" id="greetingText">早晨 · 第 8 週</div>
+  <div class="title">為兩個人食 ❤</div>
+  <div class="badge" id="trimesterBadge">First Trimester · 第一期</div>
+</div>
+
+<!-- STAGE SWITCHER -->
+<div class="stage-switcher">
+  <div class="stage-scroll" id="stageScroll">
+    <button class="stage-btn active" data-stage="pregnancy">
+      <span class="stage-icon">🤰</span>
+      <span class="stage-label">孕期</span>
+    </button>
+    <button class="stage-btn" data-stage="lactation">
+      <span class="stage-icon">🤱</span>
+      <span class="stage-label">哺乳期</span>
+    </button>
+    <button class="stage-btn" data-stage="bb6">
+      <span class="stage-icon">🥣</span>
+      <span class="stage-label">BB 6-8m</span>
+      <span class="stage-sub">蓉糊</span>
+    </button>
+    <button class="stage-btn" data-stage="bb9">
+      <span class="stage-icon">🍴</span>
+      <span class="stage-label">BB 9-12m</span>
+      <span class="stage-sub">軟塊</span>
+    </button>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('food')">食物</button>
+  <button class="tab" onclick="switchTab('recipes')">食譜</button>
+  <button class="tab" onclick="switchTab('plan')">餐單</button>
+  <button class="tab" onclick="switchTab('shopping')">買餸</button>
+  <button class="tab" onclick="switchTab('allergy')">過敏</button>
+  <button class="tab" onclick="switchTab('settings')">設定</button>
+</div>
+
+<div class="content">
+
+<!-- FOOD PAGE -->
+<div class="page active" id="page-food">
+  <div class="section-title">食物安全查詢</div>
+  <div id="foodStats" style="font-size: 11px; color: var(--muted); margin-bottom: 10px;"></div>
+  <input type="text" class="search" id="foodSearch" placeholder="🔍 搜尋食物⋯例如：三文魚、補鐵、止孕吐">
+  <div style="font-size: 11px; color: var(--muted); margin-bottom: 6px;">💡 快速搜尋：</div>
+  <div class="filters" style="margin-bottom: 10px;">
+    <button class="chip" onclick="quickSearch('補DHA')">補DHA</button>
+    <button class="chip" onclick="quickSearch('補鐵')">補鐵</button>
+    <button class="chip" onclick="quickSearch('補葉酸')">補葉酸</button>
+    <button class="chip" onclick="quickSearch('補鈣')">補鈣</button>
+    <button class="chip" onclick="quickSearch('止孕吐')">止孕吐</button>
+    <button class="chip" onclick="quickSearch('低汞')">低汞魚</button>
+    <button class="chip" onclick="quickSearch('蛋白質')">高蛋白</button>
+  </div>
+  <div class="filters">
+    <button class="chip active" data-filter="all">全部</button>
+    <button class="chip" data-filter="safe">✓ YES 食得</button>
+    <button class="chip" data-filter="caution">⚠ LITTLE 限量</button>
+    <button class="chip" data-filter="avoid">✗ NO 唔好食</button>
+  </div>
+  <div id="foodList"></div>
+</div>
+
+<!-- RECIPES PAGE -->
+<div class="page" id="page-recipes">
+  <div class="section-title">適合你嘅食譜</div>
+  <div class="disclaimer-banner">根據你嘅設定（爐具、餐種、過敏）已 filter 食譜</div>
+  <div class="filters">
+    <button class="chip active" data-recipe-filter="all">全部</button>
+    <button class="chip" data-recipe-filter="早餐">🌅 早餐</button>
+    <button class="chip" data-recipe-filter="午餐">🍱 午餐</button>
+    <button class="chip" data-recipe-filter="晚餐">🌙 晚餐</button>
+    <button class="chip" data-recipe-filter="小食">🍪 小食</button>
+    <button class="chip" data-recipe-filter="湯水">🍲 湯水</button>
+    <button class="chip" data-recipe-filter="省時">⚡ 省時</button>
+    <button class="chip" data-recipe-filter="高蛋白">💪 高蛋白</button>
+    <button class="chip" data-recipe-filter="止孕吐">🌿 止孕吐</button>
+    <button class="chip" data-recipe-filter="補鐵">🩸 補鐵</button>
+    <button class="chip" data-recipe-filter="補DHA">🧠 補DHA</button>
+  </div>
+  <div id="recipeList"></div>
+</div>
+
+<!-- PLAN PAGE -->
+<div class="page" id="page-plan">
+  <div class="section-title">餐單生成器</div>
+
+  <div class="setting-group" style="margin-bottom: 14px;">
+    <div class="setting-label">食幾多人？</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+      <div>
+        <div style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">大人</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="num-btn" onclick="changeNum('adults',-1)">−</button>
+          <span id="numAdults" style="font-size: 18px; font-weight: 700; min-width: 24px; text-align: center;">2</span>
+          <button class="num-btn" onclick="changeNum('adults',1)">+</button>
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 12px; color: var(--muted); margin-bottom: 6px;">小朋友</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="num-btn" onclick="changeNum('kids',-1)">−</button>
+          <span id="numKids" style="font-size: 18px; font-weight: 700; min-width: 24px; text-align: center;">0</span>
+          <button class="num-btn" onclick="changeNum('kids',1)">+</button>
+        </div>
+      </div>
+    </div>
+    <div style="font-size: 11px; color: var(--muted); margin-top: 8px;">💡 小朋友份量約 = 大人 0.6 份</div>
+  </div>
+
+  <button class="gen-btn" onclick="generatePlan('day')">🎲 隨機生成一日餐單</button>
+  <button class="gen-btn" onclick="generatePlan('week')" style="background: var(--sage);">📅 生成一星期餐單</button>
+  <div id="planResult"></div>
+</div>
+
+<!-- SHOPPING PAGE -->
+<div class="page" id="page-shopping">
+  <div class="section-title">買餸清單</div>
+  <div class="disclaimer-banner">根據你嘅餐單自動計算份量，可以選擇幾日買一次</div>
+
+  <div class="setting-group" style="margin-bottom: 14px;">
+    <div class="setting-label">買幾日嘅嘢？</div>
+    <div class="opt-grid three">
+      <button class="opt-btn active" data-set="shopDays" data-val="2">2 日</button>
+      <button class="opt-btn" data-set="shopDays" data-val="3">3 日</button>
+      <button class="opt-btn" data-set="shopDays" data-val="7">一星期</button>
+    </div>
+  </div>
+
+  <button class="gen-btn" onclick="generateShopping()">🛒 生成買餸清單</button>
+  <div id="shoppingResult"></div>
+</div>
+
+<!-- ALLERGY TRACKER PAGE -->
+<div class="page" id="page-allergy">
+  <div class="section-title">過敏追蹤</div>
+  <div class="disclaimer-banner" style="background: rgba(201,30,30,0.08); border-left-color: #c93030;">
+    🚨 <strong>緊急情況：</strong>BB 食完出現呼吸困難、面腫、嘴唇/舌頭腫、全身出疹、意識模糊 — <strong>即時撥 999</strong>，唔好等。
+  </div>
+
+  <div class="allergy-rules">
+    <div class="rule-title">📋 引入新食物 3 大原則</div>
+    <ol class="rule-list">
+      <li><strong>一次一樣</strong>：每次只引入一種新食物</li>
+      <li><strong>等 3-5 日</strong>：觀察有冇反應先再加新食物</li>
+      <li><strong>細量開始</strong>：第一次半茶匙，逐步加量</li>
+    </ol>
+  </div>
+
+  <div style="display: flex; gap: 8px; margin: 14px 0;">
+    <button class="gen-btn" style="margin: 0; flex: 1;" onclick="showAllergyForm()">+ 加紀錄</button>
+    <button class="gen-btn" style="margin: 0; flex: 1; background: var(--plum);" onclick="exportAllergy()">📤 匯出畀醫生</button>
+  </div>
+
+  <div id="allergyList"></div>
+</div>
+<div class="page" id="page-settings">
+  <div class="section-title">個人設定</div>
+
+  <div class="setting-group">
+    <div class="setting-label">孕期週數</div>
+    <div class="opt-grid three">
+      <button class="opt-btn active" data-set="trimester" data-val="1">第一期<br><small>1-12週</small></button>
+      <button class="opt-btn" data-set="trimester" data-val="2">第二期<br><small>13-27週</small></button>
+      <button class="opt-btn" data-set="trimester" data-val="3">第三期<br><small>28週+</small></button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">爐具 / 廚房工具 <span class="multi-hint">（可選多項）</span></div>
+    <div class="toggle-grid">
+      <button class="toggle-btn active" data-multi="stoves" data-val="電磁爐">電磁爐</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="煤氣爐">煤氣爐</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="氣炸鍋">氣炸鍋</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="微波爐">微波爐</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="電飯煲">電飯煲</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="焗爐">焗爐</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="蒸爐">蒸爐</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="慢燉鍋">慢燉鍋</button>
+      <button class="toggle-btn" data-multi="stoves" data-val="多功能煲">多功能煲<small>Instant Pot</small></button>
+      <button class="toggle-btn" data-multi="stoves" data-val="攪拌機">攪拌機<small>食物處理器</small></button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">餐種偏好 <span class="multi-hint">（可選多項）</span></div>
+    <div class="toggle-grid">
+      <button class="toggle-btn active" data-multi="cuisines" data-val="中餐">🥢 中餐</button>
+      <button class="toggle-btn" data-multi="cuisines" data-val="西餐">🍴 西餐</button>
+      <button class="toggle-btn" data-multi="cuisines" data-val="日韓">🍱 日 / 韓</button>
+      <button class="toggle-btn" data-multi="cuisines" data-val="東南亞">🌶 東南亞<small>泰、越</small></button>
+      <button class="toggle-btn" data-multi="cuisines" data-val="意大利">🍝 意大利</button>
+      <button class="toggle-btn" data-multi="cuisines" data-val="地中海">🫒 地中海</button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">難度 <span class="multi-hint">（可選多項）</span></div>
+    <div class="toggle-grid one">
+      <button class="toggle-btn active" data-multi="diffs" data-val="簡單">😊 簡單<small>15 分鐘內 · 少於 5 步</small></button>
+      <button class="toggle-btn" data-multi="diffs" data-val="中等">🙂 中等<small>15-30 分鐘</small></button>
+      <button class="toggle-btn" data-multi="diffs" data-val="挑戰">💪 挑戰<small>30 分鐘以上 · 多步驟</small></button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">中醫體質 <span class="multi-hint">（可選多項，複合體質常見）</span></div>
+    <div class="toggle-grid">
+      <button class="toggle-btn active" data-multi="tcms" data-val="平和">⚖ 平和<small>一般無特別</small></button>
+      <button class="toggle-btn" data-multi="tcms" data-val="寒">❄ 偏寒<small>手腳冰冷、怕凍</small></button>
+      <button class="toggle-btn" data-multi="tcms" data-val="熱">🔥 偏熱<small>容易上火、口乾</small></button>
+      <button class="toggle-btn" data-multi="tcms" data-val="燥">🌵 偏燥<small>皮膚乾、便秘</small></button>
+      <button class="toggle-btn" data-multi="tcms" data-val="濕">💧 偏濕<small>水腫、疲倦</small></button>
+      <button class="toggle-btn" data-multi="tcms" data-val="虛">🌙 偏虛<small>氣血不足、易倦</small></button>
+    </div>
+    <div style="font-size:11px; color:var(--muted); margin-top:10px; background:rgba(201,165,88,0.1); padding:8px; border-radius:8px;">💡 唔確定？建議睇註冊中醫師辨證</div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">飲食模式 <span style="font-weight:400; color:var(--muted); font-size:11px;">(只揀一個)</span></div>
+    <div class="opt-grid">
+      <button class="opt-btn active" data-set="diet" data-val="normal">一般</button>
+      <button class="opt-btn" data-set="diet" data-val="健身">健身高蛋白</button>
+      <button class="opt-btn" data-set="diet" data-val="低碳">低碳水</button>
+      <button class="opt-btn" data-set="diet" data-val="素食">素食</button>
+      <button class="opt-btn" data-set="diet" data-val="半素">半素 / 魚素</button>
+      <button class="opt-btn" data-set="diet" data-val="妊娠糖尿">妊娠糖尿餐</button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">過敏 / 唔食 <span class="multi-hint">（可選多項）</span></div>
+    <div class="toggle-grid">
+      <button class="toggle-btn" data-multi="allergens" data-val="海鮮">🦐 海鮮</button>
+      <button class="toggle-btn" data-multi="allergens" data-val="花生">🥜 花生</button>
+      <button class="toggle-btn" data-multi="allergens" data-val="奶製品">🥛 奶製品<small>乳糖不耐</small></button>
+      <button class="toggle-btn" data-multi="allergens" data-val="蛋">🥚 蛋</button>
+      <button class="toggle-btn" data-multi="allergens" data-val="麩質">🌾 麩質 / 麥</button>
+      <button class="toggle-btn" data-multi="allergens" data-val="牛肉">🥩 牛肉</button>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">健康狀況 <span class="multi-hint">（可選多項，會影響建議）</span></div>
+    <div class="toggle-grid">
+      <button class="toggle-btn" data-multi="conditions" data-val="妊娠糖尿">妊娠糖尿</button>
+      <button class="toggle-btn" data-multi="conditions" data-val="高血壓">妊娠高血壓</button>
+      <button class="toggle-btn" data-multi="conditions" data-val="貧血">貧血</button>
+      <button class="toggle-btn" data-multi="conditions" data-val="便秘">便秘</button>
+      <button class="toggle-btn" data-multi="conditions" data-val="孕吐">孕吐嚴重</button>
+      <button class="toggle-btn" data-multi="conditions" data-val="水腫">水腫</button>
+    </div>
+  </div>
+
+  <button class="btn-primary" onclick="saveSettings()">儲存設定</button>
+  
+  <div class="setting-group" style="margin-top: 20px;">
+    <div class="setting-label">資料管理</div>
+    <button class="btn-primary" style="background: var(--sage); margin-bottom: 8px;" onclick="forceReloadData()">🔄 重新載入網上資料</button>
+    <div style="font-size: 11px; color: var(--muted);">如果食譜或食物有更新，撳呢度強制下載最新版本。</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- FOOD DETAIL MODAL -->
+<div class="detail-modal" id="detailModal" onclick="if(event.target===this)closeDetail()">
+  <div class="detail-box" style="position:relative">
+    <button class="close-btn" onclick="closeDetail()">✕</button>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<!-- RECIPE DETAIL MODAL -->
+<div class="detail-modal" id="recipeModal" onclick="if(event.target===this)closeRecipe()">
+  <div class="detail-box" style="position:relative">
+    <button class="close-btn" onclick="closeRecipe()">✕</button>
+    <div id="recipeContent"></div>
+  </div>
+</div>
+
+<!-- ALLERGY FORM MODAL -->
+<div id="allergyForm" class="modal-bg hidden">
+  <div class="modal" style="max-width: 440px;">
+    <h2>新增紀錄</h2>
+    <div style="font-size: 12px; color: var(--muted); margin-bottom: 14px;">紀錄 BB 食過咩 + 有冇反應</div>
+
+    <div style="margin-bottom: 12px;">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">日期</div>
+      <input type="date" id="aDate" style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px;">
+    </div>
+
+    <div style="margin-bottom: 12px;">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">食物</div>
+      <input type="text" id="aFood" placeholder="例如：牛油果蓉" style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px;">
+    </div>
+
+    <div style="margin-bottom: 12px;">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">份量</div>
+      <input type="text" id="aQty" placeholder="例如：1 茶匙" style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px;">
+    </div>
+
+    <div style="margin-bottom: 12px;">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">反應</div>
+      <div class="toggle-grid three">
+        <button class="toggle-btn active" data-reaction="無事">✓ 無事</button>
+        <button class="toggle-btn" data-reaction="輕微">⚠ 輕微</button>
+        <button class="toggle-btn" data-reaction="嚴重">🚨 嚴重</button>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 12px;" id="symptomsBox">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">症狀（可多選）</div>
+      <div class="toggle-grid">
+        <button class="toggle-btn" data-symptom="出疹">🔴 出疹</button>
+        <button class="toggle-btn" data-symptom="嘔吐">🤮 嘔吐</button>
+        <button class="toggle-btn" data-symptom="肚瀉">💩 肚瀉</button>
+        <button class="toggle-btn" data-symptom="嘴腫">💋 嘴腫</button>
+        <button class="toggle-btn" data-symptom="眼腫">👁 眼腫</button>
+        <button class="toggle-btn" data-symptom="呼吸">😮‍💨 呼吸困難</button>
+        <button class="toggle-btn" data-symptom="哭鬧">😢 哭鬧不止</button>
+        <button class="toggle-btn" data-symptom="抓癢">🤚 抓癢</button>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 12px;">
+      <div style="font-size: 12px; font-weight: 600; margin-bottom: 6px;">備註（可選）</div>
+      <textarea id="aNote" placeholder="例如：30 分鐘後出疹..." style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px; min-height: 60px; resize: vertical;"></textarea>
+    </div>
+
+    <div style="display: flex; gap: 8px;">
+      <button class="btn-primary" style="background: #aaa;" onclick="closeAllergyForm()">取消</button>
+      <button class="btn-primary" onclick="saveAllergy()">儲存</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== DATA (loaded from GitHub) =====
+// Data URLs - REPLACE THESE WITH YOUR GITHUB RAW URLs
+const DATA_URLS = {
+  foods: './foods.json',
+  recipes: './recipes.json'
+};
+
+let STAGE_DATA = {
+  pregnancy: { foods: [], recipes: [], name: '孕期' },
+  lactation: { foods: [], recipes: [], name: '哺乳期' },
+  bb6: { foods: [], recipes: [], name: 'BB 6-8 個月' },
+  bb9: { foods: [], recipes: [], name: 'BB 9-12 個月' }
+};
+
+let dataLoaded = false;
+
+async function loadDataFromCloud() {
+  // Try cache first for instant display
+  try {
+    const cached = localStorage.getItem('bg_dataCache');
+    if (cached) {
+      const data = JSON.parse(cached);
+      const cacheAge = Date.now() - (data.timestamp || 0);
+      // Use cache if less than 7 days old
+      if (cacheAge < 7 * 24 * 60 * 60 * 1000) {
+        applyData(data.foods, data.recipes);
+        console.log('Loaded from cache');
+      }
+    }
+  } catch(e) { console.log('Cache load error:', e); }
+
+  // Fetch fresh data in background
+  try {
+    showLoadingStatus('🌐 載入最新食譜資料中⋯');
+    const [foodsRes, recipesRes] = await Promise.all([
+      fetch(DATA_URLS.foods),
+      fetch(DATA_URLS.recipes)
+    ]);
+    if (!foodsRes.ok || !recipesRes.ok) throw new Error('Fetch failed');
+    const foods = await foodsRes.json();
+    const recipes = await recipesRes.json();
+    applyData(foods, recipes);
+    // Cache it
+    localStorage.setItem('bg_dataCache', JSON.stringify({
+      timestamp: Date.now(), foods, recipes
+    }));
+    showLoadingStatus(`✓ 資料已更新 · ${foods.meta?.updated || ''}`);
+    setTimeout(() => hideLoadingStatus(), 3000);
+  } catch(err) {
+    console.log('Fetch error:', err);
+    if (!dataLoaded) {
+      showLoadingStatus('⚠️ 無法載入網上資料，請檢查網絡或 app 設定');
+    } else {
+      showLoadingStatus('⚠️ 用緊本地 cache 資料');
+      setTimeout(() => hideLoadingStatus(), 3000);
+    }
+  }
+}
+
+function applyData(foods, recipes) {
+  STAGE_DATA.pregnancy.foods = foods.pregnancy || [];
+  STAGE_DATA.pregnancy.recipes = recipes.pregnancy || [];
+  STAGE_DATA.lactation.foods = foods.lactation || [];
+  STAGE_DATA.lactation.recipes = recipes.lactation || [];
+  STAGE_DATA.bb6.foods = foods.bb6 || [];
+  STAGE_DATA.bb6.recipes = recipes.bb6 || [];
+  STAGE_DATA.bb9.foods = foods.bb9 || [];
+  STAGE_DATA.bb9.recipes = recipes.bb9 || [];
+  dataLoaded = true;
+  // Re-render
+  try {
+    renderFoods();
+    renderRecipes();
+  } catch(e) { console.log('Render error:', e); }
+}
+
+function showLoadingStatus(msg) {
+  let el = document.getElementById('loadingStatus');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'loadingStatus';
+    el.style.cssText = 'position: fixed; top: 0; left: 50%; transform: translateX(-50%); background: var(--plum); color: white; padding: 8px 16px; border-radius: 0 0 12px 12px; font-size: 12px; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function hideLoadingStatus() {
+  const el = document.getElementById('loadingStatus');
+  if (el) el.style.display = 'none';
+}
+
+// ===== STATE =====
+let currentStage = 'pregnancy';
+let allergyRecords = []; // {id, date, food, qty, reaction, symptoms[], note}
+let currentReactionType = '無事';
+let currentSymptoms = [];
+
+let settings = {
+  trimester: 1,
+  stoves: ['電磁爐'],
+  cuisines: ['中餐'],
+  diffs: ['簡單'],
+  tcms: ['平和'],
+  diet: 'normal',
+  allergens: [], conditions: [],
+  adults: 2, kids: 0, shopDays: 2
+};
+let currentFoodFilter = 'all';
+let currentRecipeFilter = 'all';
+let currentPlan = null;
+
+// Get foods/recipes for current stage
+function curFoods() { return STAGE_DATA[currentStage].foods; }
+function curRecipes() { return STAGE_DATA[currentStage].recipes; }
+
+// Stage switch
+document.querySelectorAll('.stage-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    try {
+      document.querySelectorAll('.stage-btn').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      currentStage = b.dataset.stage;
+      document.body.setAttribute('data-current-stage', currentStage);
+      const headerTitles = {
+        pregnancy: { greeting: '🤰 孕期', title: '為兩個人食 ❤' },
+        lactation: { greeting: '🤱 哺乳期', title: '泌奶餵 BB ❤' },
+        bb6: { greeting: '🥣 BB 6-8 個月', title: '初試固體食物' },
+        bb9: { greeting: '🍴 BB 9-12 個月', title: '軟塊 + 手抓食物' }
+      };
+      const t = headerTitles[currentStage];
+      const greetEl = document.getElementById('greetingText');
+      const titleEl = document.querySelector('.title');
+      if (greetEl) greetEl.textContent = t.greeting;
+      if (titleEl) titleEl.textContent = t.title;
+      const tBadge = document.getElementById('trimesterBadge');
+      if (tBadge) tBadge.style.display = currentStage === 'pregnancy' ? 'inline-block' : 'none';
+      renderFoods();
+      renderRecipes();
+      if (currentPlan) {
+        const planEl = document.getElementById('planResult');
+        if (planEl) planEl.innerHTML = '<div class="empty">切換階段後請重新生成餐單</div>';
+      }
+    } catch(err) {
+      console.log('Stage switch error:', err);
+    }
+  });
+});
+
+function changeNum(key, delta) {
+  const min = key === 'adults' ? 1 : 0;
+  settings[key] = Math.max(min, Math.min(10, settings[key] + delta));
+  document.getElementById(key === 'adults' ? 'numAdults' : 'numKids').textContent = settings[key];
+}
+
+// ===== INIT =====
+const agreeCheck = document.getElementById('agreeCheck');
+const agreeBtn = document.getElementById('agreeBtn');
+agreeCheck.addEventListener('change', () => agreeBtn.disabled = !agreeCheck.checked);
+agreeBtn.addEventListener('click', () => {
+  document.getElementById('disclaimerModal').classList.add('hidden');
+});
+
+// ===== TABS =====
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const tabs = ['food','recipes','plan','shopping','allergy','settings'];
+  const idx = tabs.indexOf(tab);
+  if (idx >= 0) document.querySelectorAll('.tab')[idx].classList.add('active');
+  document.getElementById('page-' + tab).classList.add('active');
+}
+
+// ===== FOOD =====
+function renderFoods() {
+  const search = document.getElementById('foodSearch').value.toLowerCase().trim();
+  const list = document.getElementById('foodList');
+  const allFoods = curFoods();
+  const filtered = allFoods.filter(f => {
+    if (currentFoodFilter !== 'all' && f.status !== currentFoodFilter) return false;
+    if (search) {
+      const haystack = (f.name + ' ' + f.en + ' ' + (f.tags || []).join(' ') + ' ' + (f.why || '') + ' ' + (f.note || '')).toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
+    return true;
+  });
+  
+  // Stats banner
+  const stats = document.getElementById('foodStats');
+  if (stats) {
+    const counts = { safe: 0, caution: 0, avoid: 0 };
+    allFoods.forEach(f => counts[f.status]++);
+    stats.innerHTML = `📚 共 <strong>${allFoods.length}</strong> 食物 · 🟢 ${counts.safe} 食得 · 🟡 ${counts.caution} 限量 · 🔴 ${counts.avoid} 唔好 · 顯示 ${filtered.length} 個`;
+  }
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>搵唔到呢個食物</div>';
+    return;
+  }
+  const badgeText = {
+    safe: { main: 'YES', sub: '食得' },
+    caution: { main: 'LITTLE', sub: '限量' },
+    avoid: { main: 'NO', sub: '唔好' }
+  };
+  list.innerHTML = filtered.map((f) => `
+    <div class="food-card ${f.status}" onclick="showFood(${allFoods.indexOf(f)})">
+      <div class="food-icon ${f.status}">${f.icon}</div>
+      <div class="food-info">
+        <div class="food-name">${f.name}</div>
+        <div class="food-tag">${f.tags.join(' · ')}</div>
+      </div>
+      <div class="status-badge ${f.status}">
+        ${badgeText[f.status].main}
+        <small>${badgeText[f.status].sub}</small>
+      </div>
+    </div>
+  `).join('');
+}
+
+function showFood(i) {
+  const f = curFoods()[i];
+  const statusText = { 
+    safe: '✓ YES · 食得 / 推薦', 
+    caution: '⚠ LITTLE · 小心 / 限量', 
+    avoid: '✗ NO · 唔好食 / 避免' 
+  };
+  document.getElementById('detailContent').innerHTML = `
+    <div class="detail-header">
+      <div class="food-icon detail-icon ${f.status}">${f.icon}</div>
+      <div>
+        <div class="detail-title">${f.name}</div>
+        <div class="detail-status ${f.status}">${statusText[f.status]}</div>
+      </div>
+    </div>
+    <div class="detail-section">
+      <h4>為咩</h4>
+      <p>${f.why}</p>
+    </div>
+    <div class="detail-section">
+      <h4>注意事項</h4>
+      <p>${f.note}</p>
+    </div>
+    <div class="detail-section">
+      <p class="source">來源：${f.sources}</p>
+    </div>
+    <div style="background:rgba(201,123,94,0.08); padding:12px; border-radius:10px; font-size:12px; color:var(--muted); margin-top:10px;">
+      ⚠️ 此資料只供參考。任何疑問請諮詢你嘅產科醫生/兒科醫生或註冊營養師。
+    </div>
+  `;
+  document.getElementById('detailModal').classList.add('show');
+}
+function closeDetail() { document.getElementById('detailModal').classList.remove('show'); }
+
+document.getElementById('foodSearch').addEventListener('input', renderFoods);
+
+function quickSearch(term) {
+  document.getElementById('foodSearch').value = term;
+  // Reset status filter
+  document.querySelectorAll('.chip[data-filter]').forEach(c => c.classList.remove('active'));
+  document.querySelector('.chip[data-filter="all"]').classList.add('active');
+  currentFoodFilter = 'all';
+  renderFoods();
+}
+document.querySelectorAll('.chip[data-filter]').forEach(c => {
+  c.addEventListener('click', () => {
+    document.querySelectorAll('.chip[data-filter]').forEach(x => x.classList.remove('active'));
+    c.classList.add('active');
+    currentFoodFilter = c.dataset.filter;
+    renderFoods();
+  });
+});
+
+// ===== RECIPES =====
+function getFilteredRecipes() {
+  return curRecipes().filter(r => {
+    // Allergen filter
+    if (r.allergens && settings.allergens.some(a => r.allergens.includes(a))) return false;
+    if (currentRecipeFilter !== 'all') {
+      const f = currentRecipeFilter;
+      const matches = (r.meal && r.meal.includes(f))
+        || (r.features && r.features.includes(f))
+        || r.cuisine === f
+        || r.difficulty === f
+        || (r.tags && r.tags.includes(f));
+      if (!matches) return false;
+    }
+    return true;
+  });
+}
+
+function renderRecipes() {
+  const list = document.getElementById('recipeList');
+  const filtered = getFilteredRecipes();
+  const allRecipes = curRecipes();
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty"><div class="empty-icon">🍽</div>無啱嘅食譜，試下改 filter</div>';
+    return;
+  }
+  const mealIcons = { 早餐: '🌅', 午餐: '🍱', 晚餐: '🌙', 小食: '🍪', 湯水: '🍲' };
+  const featureIcons = { 省時: '⚡', 高蛋白: '💪', 健身: '🏋', 止孕吐: '🌿', 補鐵: '🩸', 補DHA: '🧠', 補葉酸: '🌱', 補鈣: '🦴', 補血: '❤', 湯水: '🍲', 溫和: '☁', 消水腫: '💧', 纖維: '🌾', 第一口: '🥇', 發奶: '🤱', 腦發育: '🧠', 維他命A: '🥕', 過敏原: '⚠', 'finger food': '👋' };
+  list.innerHTML = filtered.map((r) => {
+    const mealBadges = (r.meal || []).map(m => `<span class="meal-badge ${m}">${mealIcons[m] || ''} ${m}</span>`).join('');
+    const featureBadges = (r.features || []).map(f => `<span class="feature-badge ${f}">${featureIcons[f] || '•'} ${f}</span>`).join('');
+    return `
+      <div class="recipe-card" onclick="showRecipe(${allRecipes.indexOf(r)})">
+        <div class="recipe-title">${r.name}</div>
+        <div class="recipe-badges">${mealBadges}${featureBadges}</div>
+        <div class="recipe-meta">
+          <span>⏱ ${r.time} 分鐘</span>
+          <span>${r.cuisine}</span>
+          <span>${r.difficulty}</span>
+          <span>🔥 ${r.stove}</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function showRecipe(i) {
+  const r = curRecipes()[i];
+  const nutri = Object.entries(r.nutrition).map(([k,v]) => `
+    <div class="nutri-item">
+      <div class="nutri-label">${k}</div>
+      <div class="nutri-value">${v}${k==='卡路里'?'':k==='葉酸'?'µg':'g'}</div>
+    </div>
+  `).join('');
+  document.getElementById('recipeContent').innerHTML = `
+    <div class="recipe-detail">
+      <div style="font-size:22px; font-weight:700; margin-bottom:6px;">${r.name}</div>
+      <div class="recipe-meta" style="margin-bottom:10px;">
+        <span>⏱ ${r.time} 分鐘</span>
+        <span>${r.difficulty}</span>
+        <span>🔥 ${r.stove}</span>
+      </div>
+      <div style="background:rgba(138,154,123,0.1); padding:12px; border-radius:10px; font-size:13px; color:var(--ink); margin-bottom:10px;">
+        💡 ${r.why}
+      </div>
+      <h3>📝 材料</h3>
+      <ul>${r.ingredients.map(x => `<li>${x}</li>`).join('')}</ul>
+      <h3>👩‍🍳 步驟</h3>
+      <ol>${r.steps.map(x => `<li>${x}</li>`).join('')}</ol>
+      <h3>📊 營養成分（每份）</h3>
+      <div class="nutri-grid">${nutri}</div>
+      <div style="background:rgba(201,123,94,0.08); padding:12px; border-radius:10px; font-size:12px; color:var(--muted); margin-top:14px;">
+        ⚠️ 營養數值為估算。如有特殊健康狀況請諮詢營養師或兒科醫生。
+      </div>
+    </div>
+  `;
+  document.getElementById('recipeModal').classList.add('show');
+}
+function closeRecipe() { document.getElementById('recipeModal').classList.remove('show'); }
+
+document.querySelectorAll('.chip[data-recipe-filter]').forEach(c => {
+  c.addEventListener('click', () => {
+    document.querySelectorAll('.chip[data-recipe-filter]').forEach(x => x.classList.remove('active'));
+    c.classList.add('active');
+    currentRecipeFilter = c.dataset.recipeFilter;
+    renderRecipes();
+  });
+});
+
+// ===== PLAN =====
+function generatePlan(type) {
+  const available = getFilteredRecipes();
+  const allRecipes = curRecipes();
+  if (available.length < 3) {
+    document.getElementById('planResult').innerHTML = '<div class="empty">食譜庫唔夠，請先放寬設定</div>';
+    return;
+  }
+  const days = type === 'day' ? 1 : 7;
+  const dayNames = ['星期一','星期二','星期三','星期四','星期五','星期六','星期日'];
+  const portions = settings.adults + settings.kids * 0.6;
+  currentPlan = { type, days: [], portions, stage: currentStage };
+
+  let html = `<div style="background: rgba(138,154,123,0.12); padding: 10px 12px; border-radius: 10px; font-size: 12px; margin-bottom: 14px;">📍 階段：${STAGE_DATA[currentStage].name} · ${settings.adults} 大人 ${settings.kids > 0 ? `+ ${settings.kids} 小朋友 ` : ''}· 份量已調整</div>`;
+
+  for (let d = 0; d < days; d++) {
+    if (days > 1) html += `<div class="section-title" style="margin-top:20px;">${dayNames[d]}</div>`;
+    const meals = ['早餐','午餐','晚餐'];
+    let dayCal = 0, dayProtein = 0;
+    const used = [];
+    const dayRecipes = [];
+    meals.forEach(m => {
+      let pool = available.filter(r => !used.includes(r));
+      if (pool.length === 0) pool = available;
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+      used.push(pick);
+      const recipeIdx = allRecipes.indexOf(pick);
+      dayRecipes.push(recipeIdx);
+      dayCal += pick.nutrition.卡路里 || 0;
+      dayProtein += pick.nutrition.蛋白質 || 0;
+      html += `
+        <div class="meal-block" onclick="showRecipe(${recipeIdx})" style="cursor:pointer;">
+          <div class="meal-time">${m} <span style="float:right; color:var(--muted); font-weight:400; letter-spacing:0; text-transform:none;">撳入去睇煮法 →</span></div>
+          <div class="meal-name">${pick.name}</div>
+          <div class="meal-cal">${pick.nutrition.卡路里} kcal · ${pick.nutrition.蛋白質}g 蛋白質 · ${pick.time}分鐘</div>
+        </div>
+      `;
+    });
+    currentPlan.days.push(dayRecipes);
+    html += `
+      <div class="total-nutri">
+        <h4>${days === 1 ? '一日' : dayNames[d]} 營養總計（每人）</h4>
+        <div class="total-grid">
+          <div class="total-item"><div class="total-val">${dayCal}</div><div class="total-lab">卡路里</div></div>
+          <div class="total-item"><div class="total-val">${dayProtein}g</div><div class="total-lab">蛋白質</div></div>
+          <div class="total-item"><div class="total-val">3</div><div class="total-lab">主餐</div></div>
+          <div class="total-item"><div class="total-val">${Math.round(dayCal/2200*100)}%</div><div class="total-lab">日需量</div></div>
+        </div>
+      </div>
+    `;
+  }
+  html += `<div style="background:rgba(201,123,94,0.08); padding:12px; border-radius:10px; font-size:12px; color:var(--muted); margin-top:14px;">⚠️ 建議參考。實際營養需求請諮詢註冊營養師。</div>`;
+  html += `<button class="gen-btn" onclick="switchTab('shopping')" style="background: var(--terracotta); margin-top: 14px;">🛒 用呢個餐單生成買餸清單 →</button>`;
+  document.getElementById('planResult').innerHTML = html;
+}
+
+// ===== SHOPPING LIST =====
+const CATEGORIES = {
+  '🥩 肉類 / 海鮮': ['三文魚','雞','牛','豬','蝦','魚','排骨','蝦仁'],
+  '🥬 蔬菜 / 生果': ['菠菜','番茄','西蘭花','洋葱','蒜','薑','南瓜','番薯','蘑菇','冬瓜','藍莓','香蕉','蘋果','奇異果','牛油果','葱','生菜'],
+  '🥚 蛋 / 奶製品': ['雞蛋','乳酪','奶'],
+  '🌾 主食 / 穀物': ['米','飯','麵包','意粉','燕麥','藜麥','多士','麵','豆腐','紅腰豆','小米'],
+  '🍯 調味料 / 其他': ['鹽','糖','油','生抽','醬油','味醂','陳皮','紅棗','雪耳','花生醬','蜂蜜','肉桂','黑椒','香草','檸檬','橄欖油','麻油','孜然','辣椒','番茄醬','杏仁']
+};
+
+function categorize(ingredient) {
+  for (const [cat, keywords] of Object.entries(CATEGORIES)) {
+    if (keywords.some(k => ingredient.includes(k))) return cat;
+  }
+  return '🛒 其他';
+}
+
+function generateShopping() {
+  if (!currentPlan) {
+    document.getElementById('shoppingResult').innerHTML = '<div class="empty"><div class="empty-icon">📋</div>請先去「餐單」生成一個餐單</div>';
+    return;
+  }
+
+  // Collect recipes for the requested days
+  const stageRecipes = currentPlan.stage ? STAGE_DATA[currentPlan.stage].recipes : curRecipes();
+  const totalPlanDays = currentPlan.days.length;
+  const wantDays = Math.min(parseInt(settings.shopDays), totalPlanDays);
+  const recipesToShop = [];
+  for (let d = 0; d < wantDays; d++) {
+    currentPlan.days[d].forEach(idx => recipesToShop.push(stageRecipes[idx]));
+  }
+
+  // Aggregate ingredients by category
+  const portions = currentPlan.portions || (settings.adults + settings.kids * 0.6);
+  const categorized = {};
+  const ingredientCount = {};
+
+  recipesToShop.forEach(r => {
+    r.ingredients.forEach(ing => {
+      const cat = categorize(ing);
+      if (!categorized[cat]) categorized[cat] = [];
+      // Count duplicates
+      const key = ing;
+      ingredientCount[key] = (ingredientCount[key] || 0) + 1;
+      if (!categorized[cat].find(x => x.ing === ing)) {
+        categorized[cat].push({ ing, count: 0 });
+      }
+    });
+  });
+
+  // Update counts
+  Object.values(categorized).forEach(items => {
+    items.forEach(item => { item.count = ingredientCount[item.ing]; });
+  });
+
+  // Render
+  let html = `
+    <div style="background: rgba(138,154,123,0.12); padding: 12px; border-radius: 10px; font-size: 13px; margin-bottom: 14px;">
+      🛒 <strong>${wantDays} 日</strong> · ${settings.adults} 大人 ${settings.kids > 0 ? `+ ${settings.kids} 小朋友` : ''} · 共 ${wantDays * 3} 餐
+    </div>
+    <div class="shop-action-bar">
+      <button onclick="checkAllShop(false)">全部取消</button>
+      <button onclick="shareShop()">📤 分享清單</button>
+    </div>
+  `;
+
+  Object.entries(categorized).forEach(([cat, items]) => {
+    html += `<div class="shop-category">
+      <div class="shop-cat-title">${cat} <span style="color:var(--muted); font-weight:400; font-size:11px;">(${items.length} 項)</span></div>`;
+    items.forEach((item, i) => {
+      const id = `shop-${cat}-${i}`.replace(/[^a-zA-Z0-9-]/g, '');
+      const qtyText = item.count > 1 ? ` ×${item.count}` : '';
+      html += `
+        <div class="shop-item">
+          <input type="checkbox" id="${id}" onchange="toggleShopItem(this)">
+          <label for="${id}" class="shop-item-name" style="cursor:pointer;">${item.ing}</label>
+          ${item.count > 1 ? `<span class="shop-item-qty">${qtyText}</span>` : ''}
+        </div>
+      `;
+    });
+    html += `</div>`;
+  });
+
+  html += `
+    <div style="background:rgba(201,123,94,0.08); padding:12px; border-radius:10px; font-size:12px; color:var(--muted); margin-top:14px;">
+      ⚠️ 份量基於 ${portions.toFixed(1)} 份食譜。實際買幾多請按食譜列出嘅克數，按人數同次數調整。
+    </div>
+  `;
+
+  document.getElementById('shoppingResult').innerHTML = html;
+}
+
+function toggleShopItem(cb) {
+  const label = cb.nextElementSibling;
+  if (cb.checked) label.classList.add('checked');
+  else label.classList.remove('checked');
+}
+
+function checkAllShop(state) {
+  document.querySelectorAll('#shoppingResult input[type="checkbox"]').forEach(cb => {
+    cb.checked = state;
+    toggleShopItem(cb);
+  });
+}
+
+function shareShop() {
+  let text = '🛒 買餸清單\n\n';
+  document.querySelectorAll('.shop-category').forEach(cat => {
+    const title = cat.querySelector('.shop-cat-title').textContent.split('(')[0].trim();
+    text += `${title}\n`;
+    cat.querySelectorAll('.shop-item').forEach(item => {
+      const name = item.querySelector('.shop-item-name').textContent;
+      const qty = item.querySelector('.shop-item-qty');
+      text += `  • ${name}${qty ? ' ' + qty.textContent : ''}\n`;
+    });
+    text += '\n';
+  });
+  if (navigator.share) {
+    navigator.share({ title: '買餸清單', text }).catch(()=>{});
+  } else {
+    navigator.clipboard.writeText(text).then(() => alert('✓ 已複製到剪貼簿，可以 paste 去 WhatsApp')).catch(() => alert(text));
+  }
+}
+document.querySelectorAll('.opt-btn[data-set]').forEach(b => {
+  b.addEventListener('click', () => {
+    const key = b.dataset.set;
+    document.querySelectorAll(`.opt-btn[data-set="${key}"]`).forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    settings[key] = b.dataset.val;
+  });
+});
+
+// Unified handler for all multi-select toggle buttons
+document.querySelectorAll('.toggle-btn[data-multi]').forEach(b => {
+  b.addEventListener('click', () => {
+    const key = b.dataset.multi;
+    const val = b.dataset.val;
+    b.classList.toggle('active');
+    const active = Array.from(document.querySelectorAll(`.toggle-btn[data-multi="${key}"].active`)).map(x => x.dataset.val);
+    settings[key] = active;
+  });
+});
+
+// ===== ALLERGY TRACKING =====
+function loadAllergyRecords() {
+  try {
+    const raw = localStorage.getItem('bg_allergyRecords');
+    if (raw) allergyRecords = JSON.parse(raw);
+  } catch(e) { allergyRecords = []; console.log('Load error:', e); }
+  renderAllergyList();
+}
+
+function saveAllergyRecords() {
+  try {
+    localStorage.setItem('bg_allergyRecords', JSON.stringify(allergyRecords));
+  } catch(e) { console.log('Save error:', e); }
+}
+
+function renderAllergyList() {
+  const list = document.getElementById('allergyList');
+  if (!list) return;
+  if (allergyRecords.length === 0) {
+    list.innerHTML = '<div class="empty"><div class="empty-icon">📋</div>仲未有紀錄。撳「+ 加紀錄」開始追蹤 BB 嘅食物反應。</div>';
+    return;
+  }
+  const sorted = [...allergyRecords].sort((a,b) => b.date.localeCompare(a.date));
+  list.innerHTML = sorted.map(r => `
+    <div class="allergy-card reaction-${r.reaction}">
+      <button class="allergy-delete" onclick="deleteAllergy(${r.id})">✕</button>
+      <div class="allergy-date">${r.date}</div>
+      <div class="allergy-food">${r.food}</div>
+      <div class="allergy-meta">份量：${r.qty || '未紀錄'}</div>
+      <div>
+        <span class="allergy-reaction-badge ${r.reaction}">
+          ${r.reaction === '無事' ? '✓' : r.reaction === '輕微' ? '⚠' : '🚨'} ${r.reaction}
+        </span>
+      </div>
+      ${r.symptoms && r.symptoms.length ? `<div class="allergy-symptoms">症狀：${r.symptoms.join('、')}</div>` : ''}
+      ${r.note ? `<div class="allergy-note">📝 ${r.note}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function showAllergyForm() {
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('aDate').value = today;
+  document.getElementById('aFood').value = '';
+  document.getElementById('aQty').value = '';
+  document.getElementById('aNote').value = '';
+  currentReactionType = '無事';
+  currentSymptoms = [];
+  document.querySelectorAll('#allergyForm .toggle-btn[data-reaction]').forEach((b, i) => {
+    b.classList.toggle('active', i === 0);
+  });
+  document.querySelectorAll('#allergyForm .toggle-btn[data-symptom]').forEach(b => {
+    b.classList.remove('active');
+  });
+  document.getElementById('allergyForm').classList.remove('hidden');
+}
+
+function closeAllergyForm() {
+  document.getElementById('allergyForm').classList.add('hidden');
+}
+
+async function saveAllergy() {
+  const food = document.getElementById('aFood').value.trim();
+  if (!food) { alert('請輸入食物名'); return; }
+  const record = {
+    id: Date.now(),
+    date: document.getElementById('aDate').value,
+    food: food,
+    qty: document.getElementById('aQty').value.trim(),
+    reaction: currentReactionType,
+    symptoms: [...currentSymptoms],
+    note: document.getElementById('aNote').value.trim()
+  };
+  allergyRecords.push(record);
+  saveAllergyRecords();
+  closeAllergyForm();
+  renderAllergyList();
+  if (record.reaction === '嚴重') {
+    setTimeout(() => alert('🚨 嚴重反應已紀錄。\n\n如 BB 仍有呼吸困難、面腫、意識模糊 — 即時撥 999！\n\n建議盡快帶 BB 睇兒科醫生。'), 200);
+  }
+}
+
+async function deleteAllergy(id) {
+  if (!confirm('確定刪除呢條紀錄？')) return;
+  allergyRecords = allergyRecords.filter(r => r.id !== id);
+  saveAllergyRecords();
+  renderAllergyList();
+}
+
+function exportAllergy() {
+  if (allergyRecords.length === 0) { alert('仲未有紀錄'); return; }
+  let text = '🍼 BB 食物過敏追蹤紀錄\n';
+  text += `匯出日期：${new Date().toLocaleDateString('zh-HK')}\n`;
+  text += `總紀錄數：${allergyRecords.length}\n\n`;
+  const sorted = [...allergyRecords].sort((a,b) => a.date.localeCompare(b.date));
+  sorted.forEach(r => {
+    text += `📅 ${r.date}\n`;
+    text += `食物：${r.food}\n`;
+    if (r.qty) text += `份量：${r.qty}\n`;
+    text += `反應：${r.reaction}\n`;
+    if (r.symptoms && r.symptoms.length) text += `症狀：${r.symptoms.join('、')}\n`;
+    if (r.note) text += `備註：${r.note}\n`;
+    text += '\n';
+  });
+  if (navigator.share) {
+    navigator.share({ title: 'BB 過敏紀錄', text }).catch(()=>{});
+  } else {
+    navigator.clipboard.writeText(text).then(() => alert('✓ 已複製到剪貼簿，可以 paste 畀醫生睇')).catch(() => alert(text));
+  }
+}
+
+// Form button handlers (delegated)
+document.addEventListener('click', (e) => {
+  if (e.target.closest('#allergyForm .toggle-btn[data-reaction]')) {
+    const btn = e.target.closest('.toggle-btn[data-reaction]');
+    document.querySelectorAll('#allergyForm .toggle-btn[data-reaction]').forEach(x => x.classList.remove('active'));
+    btn.classList.add('active');
+    currentReactionType = btn.dataset.reaction;
+  }
+  if (e.target.closest('#allergyForm .toggle-btn[data-symptom]')) {
+    const btn = e.target.closest('.toggle-btn[data-symptom]');
+    btn.classList.toggle('active');
+    currentSymptoms = Array.from(document.querySelectorAll('#allergyForm .toggle-btn[data-symptom].active')).map(x => x.dataset.symptom);
+  }
+});
+
+function saveSettings() {
+  const trimester = settings.trimester;
+  const trimesterText = { 1: 'First Trimester · 第一期', 2: 'Second Trimester · 第二期', 3: 'Third Trimester · 第三期' };
+  document.getElementById('trimesterBadge').textContent = trimesterText[trimester];
+  renderRecipes();
+  alert('✓ 設定已儲存\n\n食譜會根據你嘅偏好顯示');
+}
+
+function forceReloadData() {
+  try { localStorage.removeItem('bg_dataCache'); } catch(e) {}
+  loadDataFromCloud();
+}
+
+// ===== INIT RENDER =====
+try {
+  document.body.setAttribute('data-current-stage', 'pregnancy');
+  renderFoods();
+  renderRecipes();
+  loadAllergyRecords();
+  loadDataFromCloud();
+} catch(err) {
+  console.log('Init error:', err);
+}
+</script>
+</body>
+</html>
